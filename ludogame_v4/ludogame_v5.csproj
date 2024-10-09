@@ -92,6 +92,9 @@
     <EmbeddedResource Include="TheHien\FormXuLyChinh.resx">
       <DependentUpon>FormXuLyChinh.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TheHien\TheHienXiNgau.resx">
+      <DependentUpon>TheHienXiNgau.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TheHien\TuyChon.resx">
       <DependentUpon>TuyChon.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +134,7 @@
     <Content Include="bin\Debug\HinhXiNgau\7.JPG" />
     <Content Include="bin\Debug\HinhXiNgau\8.JPG" />
     <Content Include="bin\Debug\HinhXiNgau\9.JPG" />
+    <None Include="Resources\BANCO1.BMP" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />

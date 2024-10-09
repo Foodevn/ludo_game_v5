@@ -18,8 +18,11 @@ namespace ludogame_v4.TheHien
 
 		private int soXNTH;
 
-		
-
+		public event EventHandler UserControlClicked;
+		private void TheHienXiNgau_Click(object sender, EventArgs e)
+		{
+			UserControlClicked?.Invoke(this, e);
+		}
 		public int SoXiNgauTheHien
 		{
 			get
@@ -48,7 +51,7 @@ namespace ludogame_v4.TheHien
 		{
 			if (SoXiNgauTheHien == 1)
 			{
-				picXN1.Location = new Point(32, 8);
+				picXN1.Location = new Point(22, 8);
 
                 if (picXN2.Visible)
 				{
@@ -81,8 +84,6 @@ namespace ludogame_v4.TheHien
 			picXN1.Image = new Bitmap(Application.StartupPath + "/HinhXiNgau/" + gt1 + ".jpg");
 			picXN2.Image = new Bitmap(Application.StartupPath + "/HinhXiNgau/" + gt2 + ".jpg");
 		}
-
-	
 
 		
 	}

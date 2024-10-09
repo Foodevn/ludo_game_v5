@@ -1,0 +1,12 @@
+C:\Users\hoang\source\repos\ludogame_v5\ludogame_v4\bin\Debug\ludogame_v4.exe.config
+C:\Users\hoang\source\repos\ludogame_v5\ludogame_v4\bin\Debug\ludogame_v4.exe
+C:\Users\hoang\source\repos\ludogame_v5\ludogame_v4\bin\Debug\ludogame_v4.pdb
+C:\Users\hoang\source\repos\ludogame_v5\ludogame_v4\obj\Debug\ludogame_v5.csproj.AssemblyReference.cache
+C:\Users\hoang\source\repos\ludogame_v5\ludogame_v4\obj\Debug\ludogame_v4.Properties.Resources.resources
+C:\Users\hoang\source\repos\ludogame_v5\ludogame_v4\obj\Debug\ludogame_v4.TheHien.FormXuLyChinh.resources
+C:\Users\hoang\source\repos\ludogame_v5\ludogame_v4\obj\Debug\ludogame_v4.TheHien.TheHienXiNgau.resources
+C:\Users\hoang\source\repos\ludogame_v5\ludogame_v4\obj\Debug\ludogame_v4.TheHien.TuyChon.resources
+C:\Users\hoang\source\repos\ludogame_v5\ludogame_v4\obj\Debug\ludogame_v5.csproj.GenerateResource.cache
+C:\Users\hoang\source\repos\ludogame_v5\ludogame_v4\obj\Debug\ludogame_v5.csproj.CoreCompileInputs.cache
+C:\Users\hoang\source\repos\ludogame_v5\ludogame_v4\obj\Debug\ludogame_v4.exe
+C:\Users\hoang\source\repos\ludogame_v5\ludogame_v4\obj\Debug\ludogame_v4.pdb
