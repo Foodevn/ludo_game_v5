@@ -86,30 +86,22 @@ namespace ludogame_v4.XuLy
             }
         }
 
-        public void TaoPanelXS(Panel panel)
+        public void TuDongDiChuyen(DuLieuUser User)
         {
-            //for (int j = 0; j < 4; j++)
-            //{
-            //    Panel x = new Panel();
-            //    x.BackColor = Color.Pink;
-            //    x.Location = new Point(49, 103);
+            for (int i = 0; i < User.SoQuanCo; i++)
+            {
+                QuanCo quanCo = (QuanCo)User.arrQC[i];
+                quanCo.QCTH.picQC_Click(quanCo.QCTH.picQC, EventArgs.Empty);
+            }
+        }
 
-            //    if (j == 1)
-            //    {
-            //        x.Location = new Point(49, 299);
-            //    }
-            //    if (j == 2)
-            //    {
-            //        x.Location = new Point(308, 103);
-            //    }
-            //    if (j == 3)
-            //    {
-            //        x.Location = new Point(308, 299);
-            //    }
-            //    x.Size = new System.Drawing.Size(120, 60);
-            //    panel.Controls.Add(x);
-
-            //}
+        public void TuDongDiChuyenCacQuan()
+        {
+            int soNguoichoi = DLBC.SoNguoichoi;
+            for (int i = 0; i < soNguoichoi; i++)
+            {
+                TuDongDiChuyen((DuLieuUser)DLBC.arrUsers[i]);
+            }
         }
 
         public void SapBanCo(Panel panel, DuLieuTuyChon tc)

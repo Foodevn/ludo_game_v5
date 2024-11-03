@@ -1,4 +1,5 @@
-﻿using ludogame_v4.XuLy;
+﻿using ludogame_v4.DuLieu;
+using ludogame_v4.XuLy;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -31,7 +32,7 @@ namespace ludogame_v4.TheHien
 
 		private PictureBox picLuotQC;
 
-		private TheHienXiNgau TheHienXN=new TheHienXiNgau();
+		private TheHienXiNgau TheHienXN = new TheHienXiNgau();
 
 		private XiNgau XN = new XiNgau();
 
@@ -48,21 +49,17 @@ namespace ludogame_v4.TheHien
 		public FormXuLyChinh()
 		{
 			InitializeComponent();
-
 			TheHienXN.UserControlClicked += MyControl_UserControlClicked;
-			//TheHienXN.Location = new Point(500, 0);
-			//TheHienXN.BringToFront();
-			//this.Controls.Add(TheHienXN);
+			//panelXN.Controls.Add(TheHienXN);
 
-			panelXN.Controls.Add(TheHienXN);
-			
 		}
 
 		private void MyControl_UserControlClicked(object sender, EventArgs e)
 		{
 			btnDoXiNgau.Enabled = true;
-			btnDoXiNgau.PerformClick();    
+			btnDoXiNgau.PerformClick();
 		}
+
 		private void XuLyChinh_Load(object sender, EventArgs e)
 		{
 			//LoadHinhBC();
@@ -166,7 +163,9 @@ namespace ludogame_v4.TheHien
 			}
 		}
 
-		private void btnTuyChon_Click(object sender, EventArgs e)
+ 
+
+        private void btnTuyChon_Click(object sender, EventArgs e)
 		{
 			TuyChonThamSo.ShowDialog(this);
 			btnSapBanCo.Enabled = true;
@@ -174,7 +173,7 @@ namespace ludogame_v4.TheHien
 
 		private void btnThoat_Click(object sender, EventArgs e)
 		{
-			
+
 			this.Close();
 		}
 
@@ -182,15 +181,41 @@ namespace ludogame_v4.TheHien
 		{
 			panelXN.Controls.Add(TheHienXN);
 			ResetManHinh();
-			
+
 			BC.SapBanCo(panelBC, TuyChonThamSo.tc);
 
 			btnDoXiNgau.Enabled = true;
 		}
 
-		private void panelXN_Red_Click(object sender, EventArgs e)
-		{
-			MessageBox.Show("1");
-		}
-	}
+
+        private Timer timer;
+        void HamAuto()
+        {
+            timer = new Timer();
+            timer.Interval = 1000; // 1000 mili giây = 1 giây
+            timer.Tick += Timer_Tick; // Đăng ký sự kiện Tick
+
+            // Bắt đầu Timer
+            timer.Start();
+
+
+        }
+        // Hàm sẽ được gọi mỗi khi Timer "Tick" (mỗi giây)
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            // Đoạn mã thực hiện mỗi giây
+            if (BC.DLBC.UserHienTai != TuyChonThamSo.tc.NguoiUuTien)
+            {
+
+                btnDoXiNgau.PerformClick();
+                BC.TuDongDiChuyenCacQuan();
+            }
+
+        }
+
+        private void btnTuDong_Click(object sender, EventArgs e)
+        {
+            HamAuto();
+        }
+    }
 }

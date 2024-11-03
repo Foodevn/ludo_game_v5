@@ -85,6 +85,9 @@ namespace ludogame_v4.TheHien
 			picXN2.Image = new Bitmap(Application.StartupPath + "/HinhXiNgau/" + gt2 + ".jpg");
 		}
 
-		
-	}
+        private void picXN1_Click(object sender, EventArgs e)
+        {
+            UserControlClicked?.Invoke(this, e);
+        }
+    }
 }
