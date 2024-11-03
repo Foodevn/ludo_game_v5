@@ -216,6 +216,7 @@ namespace ludogame_v4.TheHien
         private void btnTuDong_Click(object sender, EventArgs e)
         {
             HamAuto();
+			int i = 2;
         }
     }
 }
