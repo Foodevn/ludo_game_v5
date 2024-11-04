@@ -34,3 +34,17 @@ C:\Users\Lenovo\Downloads\Thư mục mới\ludo_game_v5_Test\ludogame_v4\obj\De
 C:\Users\Lenovo\Downloads\Thư mục mới\ludo_game_v5_Test\ludogame_v4\obj\Debug\ludogame_v5.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\Downloads\Thư mục mới\ludo_game_v5_Test\ludogame_v4\obj\Debug\ludogame_v4.exe
 C:\Users\Lenovo\Downloads\Thư mục mới\ludo_game_v5_Test\ludogame_v4\obj\Debug\ludogame_v4.pdb
+D:\git\ludo_game_v5\ludogame_v4\bin\Debug\ludogame_v4.exe.config
+D:\git\ludo_game_v5\ludogame_v4\bin\Debug\ludogame_v4.exe
+D:\git\ludo_game_v5\ludogame_v4\bin\Debug\ludogame_v4.pdb
+D:\git\ludo_game_v5\ludogame_v4\obj\Debug\ludogame_v5.csproj.AssemblyReference.cache
+D:\git\ludo_game_v5\ludogame_v4\obj\Debug\ludogame_v4.Properties.Resources.resources
+D:\git\ludo_game_v5\ludogame_v4\obj\Debug\ludogame_v4.TheHien.FormXuLyChinh.resources
+D:\git\ludo_game_v5\ludogame_v4\obj\Debug\ludogame_v4.TheHien.TheHienXiNgau.resources
+D:\git\ludo_game_v5\ludogame_v4\obj\Debug\ludogame_v4.TheHien.TuyChon.resources
+D:\git\ludo_game_v5\ludogame_v4\obj\Debug\ludogame_v5.csproj.GenerateResource.cache
+D:\git\ludo_game_v5\ludogame_v4\obj\Debug\ludogame_v5.csproj.CoreCompileInputs.cache
+D:\git\ludo_game_v5\ludogame_v4\obj\Debug\ludogame_v4.exe
+D:\git\ludo_game_v5\ludogame_v4\obj\Debug\ludogame_v4.pdb
+D:\git\ludo_game_v5\ludogame_v4\obj\Debug\ludogame_v4.TheHien.Login.resources
+D:\git\ludo_game_v5\ludogame_v4\obj\Debug\ludogame_v4.TheHien.SignUp.resources
