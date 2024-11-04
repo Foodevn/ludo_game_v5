@@ -121,6 +121,8 @@ namespace ludogame_v4.DuLieu
 			}
 		}
 
+		public int[] SoMay = new int[4];
+
 		public DuLieuTuyChon()
 		{
 			SoNguoiChoi = 4;
@@ -133,6 +135,7 @@ namespace ludogame_v4.DuLieu
 			{
 				SoNguaQuan[i] = 4;
 				PlayerNames[i] = "User" + i;
+				SoMay[i] = 0;
 			}
 		}
 	}

@@ -12,27 +12,27 @@ namespace ludogame_v4.DuLieu
 {
 	public class DuLieuBanCo
 	{
-		private int nUsers;
+		private int nUsers; // Số người 
 
 		private int UserHH;
 
-		private int nOco;
+		private int nOco; // Số ô trên bàn cờ
 
 		public int[] arrBC;
 
 		public int SoXN;
 
-		public int gtXN1;
+		public int gtXN1; // Giá tri 1 xí ngầu 
 
-		public int gtXN2;
+		public int gtXN2; // Giá tri 2 xí ngầu 
 
-		public int gtRQ1;
+        public int gtRQ1; // Giá tri ra quân = 1, = 6 thì đi
 
-		public int gtRQ2;
+        public int gtRQ2; 
 
-		public int gtVD1;
+        public int gtVD1;// Giá tri về đích = 1, = 6 thì đi
 
-		public int gtVD2;
+        public int gtVD2;
 
 		public ArrayList arrUsers = new ArrayList();
 

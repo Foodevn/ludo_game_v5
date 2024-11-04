@@ -29,10 +29,10 @@
 		private void InitializeComponent()
 		{
             this.panelBC = new System.Windows.Forms.Panel();
+            this.panelXN_Red = new System.Windows.Forms.Panel();
             this.panelXN_Blue = new System.Windows.Forms.Panel();
             this.panelXN_Green = new System.Windows.Forms.Panel();
             this.panelXN_Yellow = new System.Windows.Forms.Panel();
-            this.panelXN_Red = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnDoXiNgau = new System.Windows.Forms.Button();
             this.btnSapBanCo = new System.Windows.Forms.Button();
@@ -41,7 +41,6 @@
             this.btnThoat = new System.Windows.Forms.Button();
             this.panelXN = new System.Windows.Forms.Panel();
             this.picLuotQC = new System.Windows.Forms.PictureBox();
-            this.btnAuto = new System.Windows.Forms.Button();
             this.panelBC.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLuotQC)).BeginInit();
@@ -59,6 +58,15 @@
             this.panelBC.Name = "panelBC";
             this.panelBC.Size = new System.Drawing.Size(716, 715);
             this.panelBC.TabIndex = 0;
+            // 
+            // panelXN_Red
+            // 
+            this.panelXN_Red.BackColor = System.Drawing.Color.RosyBrown;
+            this.panelXN_Red.Location = new System.Drawing.Point(466, 165);
+            this.panelXN_Red.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panelXN_Red.Name = "panelXN_Red";
+            this.panelXN_Red.Size = new System.Drawing.Size(127, 90);
+            this.panelXN_Red.TabIndex = 1;
             // 
             // panelXN_Blue
             // 
@@ -86,15 +94,6 @@
             this.panelXN_Yellow.Name = "panelXN_Yellow";
             this.panelXN_Yellow.Size = new System.Drawing.Size(127, 90);
             this.panelXN_Yellow.TabIndex = 1;
-            // 
-            // panelXN_Red
-            // 
-            this.panelXN_Red.BackColor = System.Drawing.Color.RosyBrown;
-            this.panelXN_Red.Location = new System.Drawing.Point(466, 165);
-            this.panelXN_Red.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panelXN_Red.Name = "panelXN_Red";
-            this.panelXN_Red.Size = new System.Drawing.Size(127, 90);
-            this.panelXN_Red.TabIndex = 1;
             // 
             // pictureBox1
             // 
@@ -180,24 +179,13 @@
             this.picLuotQC.TabIndex = 7;
             this.picLuotQC.TabStop = false;
             // 
-            // btnAuto
-            // 
-            this.btnAuto.Location = new System.Drawing.Point(822, 413);
-            this.btnAuto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAuto.Name = "btnAuto";
-            this.btnAuto.Size = new System.Drawing.Size(102, 34);
-            this.btnAuto.TabIndex = 10;
-            this.btnAuto.Text = "Auto";
-            this.btnAuto.Click += new System.EventHandler(this.btnTuDong_Click);
-            // 
             // FormXuLyChinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1118, 742);
+            this.ClientSize = new System.Drawing.Size(1108, 742);
             this.Controls.Add(this.panelXN);
-            this.Controls.Add(this.btnAuto);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnTuyChon);
             this.Controls.Add(this.label1);
@@ -227,6 +215,5 @@
         private System.Windows.Forms.Panel panelXN_Blue;
 		private System.Windows.Forms.Panel panelXN_Green;
 		private System.Windows.Forms.Panel panelXN_Yellow;
-        private System.Windows.Forms.Button btnAuto;
     }
 }
