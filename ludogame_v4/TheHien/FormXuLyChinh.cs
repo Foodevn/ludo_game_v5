@@ -186,6 +186,7 @@ namespace ludogame_v4.TheHien
 
             btnDoXiNgau.Enabled = true;
 
+            isAutoRunning = false;
             HamAuto();
         }
 
