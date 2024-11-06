@@ -97,6 +97,7 @@
 			// 
 			this.txtMatKhau.Location = new System.Drawing.Point(223, 225);
 			this.txtMatKhau.Name = "txtMatKhau";
+			this.txtMatKhau.PasswordChar = '*';
 			this.txtMatKhau.Size = new System.Drawing.Size(203, 22);
 			this.txtMatKhau.TabIndex = 1;
 			// 
@@ -104,6 +105,7 @@
 			// 
 			this.txtXacNhanMatKhau.Location = new System.Drawing.Point(223, 253);
 			this.txtXacNhanMatKhau.Name = "txtXacNhanMatKhau";
+			this.txtXacNhanMatKhau.PasswordChar = '*';
 			this.txtXacNhanMatKhau.Size = new System.Drawing.Size(203, 22);
 			this.txtXacNhanMatKhau.TabIndex = 1;
 			// 
@@ -125,6 +127,7 @@
 			this.btnDangKy.TabIndex = 6;
 			this.btnDangKy.Text = "Đăng Ký";
 			this.btnDangKy.UseVisualStyleBackColor = false;
+			this.btnDangKy.Click += new System.EventHandler(this.btnDangKy_Click);
 			// 
 			// pictureBox1
 			// 
@@ -154,6 +157,7 @@
 			this.Controls.Add(this.pictureBox1);
 			this.Name = "SignUp";
 			this.Text = "Đăng Nhập";
+			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SignUp_FormClosed);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();

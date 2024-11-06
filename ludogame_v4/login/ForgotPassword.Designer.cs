@@ -60,9 +60,9 @@
 			this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-			this.label1.Location = new System.Drawing.Point(40, 224);
+			this.label1.Location = new System.Drawing.Point(26, 224);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(144, 22);
+			this.label1.Size = new System.Drawing.Size(172, 22);
 			this.label1.TabIndex = 2;
 			this.label1.Text = "Email Đăng Ký:";
 			// 
@@ -95,6 +95,7 @@
 			this.btnLayLaiMatKhau.TabIndex = 6;
 			this.btnLayLaiMatKhau.Text = "Lấy Lại Mật Khẩu";
 			this.btnLayLaiMatKhau.UseVisualStyleBackColor = false;
+			this.btnLayLaiMatKhau.Click += new System.EventHandler(this.btnLayLaiMatKhau_Click);
 			// 
 			// ForgotPassword
 			// 
@@ -110,6 +111,7 @@
 			this.Controls.Add(this.pictureBox1);
 			this.Name = "ForgotPassword";
 			this.Text = "Quên Mật Khẩu";
+			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ForgotPassword_FormClosed);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();

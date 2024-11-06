@@ -67,6 +67,7 @@
 			this.linkLabelQuenMatKhau.TabIndex = 4;
 			this.linkLabelQuenMatKhau.TabStop = true;
 			this.linkLabelQuenMatKhau.Text = "Quên Mật Khẩu ?";
+			this.linkLabelQuenMatKhau.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelQuenMatKhau_LinkClicked);
 			// 
 			// linkLabelDangKy
 			// 
@@ -78,6 +79,7 @@
 			this.linkLabelDangKy.TabIndex = 4;
 			this.linkLabelDangKy.TabStop = true;
 			this.linkLabelDangKy.Text = "Đăng Ký";
+			this.linkLabelDangKy.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelDangKy_LinkClicked);
 			// 
 			// btnDangNhap
 			// 
@@ -90,6 +92,7 @@
 			this.btnDangNhap.TabIndex = 5;
 			this.btnDangNhap.Text = "Đăng Nhập";
 			this.btnDangNhap.UseVisualStyleBackColor = false;
+			this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
 			// 
 			// pictureBox2
 			// 
@@ -136,6 +139,7 @@
 			this.Controls.Add(this.txtTenDangNhap);
 			this.Name = "Login";
 			this.Text = "Login";
+			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Login_FormClosed);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);

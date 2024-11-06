@@ -51,3 +51,4 @@ D:\git\ludo_game_v5\ludogame_v4\obj\Debug\ludogame_v4.TheHien.SignUp.resources
 C:\Users\Lenovo\Downloads\Thư mục mới\ludo_game_v5_Test\ludogame_v4\obj\Debug\ludogame_v4.TheHien.ForgotPassword.resources
 C:\Users\Lenovo\Downloads\Thư mục mới\ludo_game_v5_Test\ludogame_v4\obj\Debug\ludogame_v4.TheHien.Login.resources
 C:\Users\Lenovo\Downloads\Thư mục mới\ludo_game_v5_Test\ludogame_v4\obj\Debug\ludogame_v4.TheHien.SignUp.resources
+D:\git\ludo_game_v5\ludogame_v4\obj\Debug\ludogame_v4.TheHien.ForgotPassword.resources
