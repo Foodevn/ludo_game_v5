@@ -133,7 +133,20 @@ namespace ludogame_v4.XuLy
                 quanCo.QCTH.User = duLieuUser;
                 quanCo.QCTH.TrangThaiClick = true;
             }
-        }
+			for (int i = 0; i < DLBC.arrUsers.Count; i++)
+			{
+				if (i != (userHienTai - 1))
+				{
+					duLieuUser = (DuLieuUser)DLBC.arrUsers[i];
+					for (int j = 0; j < duLieuUser.SoQuanCo; j++)
+					{
+						QuanCo quanCo = (QuanCo)duLieuUser.arrQC[j];
+
+						quanCo.QCTH.TrangThaiClick = false;
+					}
+				}
+			}
+		}
 
         public Point LayVT(int vtTrenBC)
         {
