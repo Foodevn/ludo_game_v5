@@ -98,6 +98,7 @@
       <DependentUpon>TuyChon.cs</DependentUpon>
     </Compile>
     <Compile Include="XuLy\BanCo.cs" />
+    <Compile Include="XuLy\LuuDuLieuSql.cs" />
     <Compile Include="XuLy\QuanCo.cs" />
     <Compile Include="XuLy\XiNgau.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">

@@ -128,6 +128,7 @@ namespace ludogame_v4.TheHien
 			picQC.Image = bmp;
 		}
 
+		LuuDuLieuSql Data = new LuuDuLieuSql();
 		public int ThucHienNuocDi()
 		{
 			if (dlqc.ViTriTrenBanCo == -1)
@@ -161,7 +162,8 @@ namespace ludogame_v4.TheHien
 						dlbc.arrBC[dlqc.ViTriTrenBanCo] = 0;
 						duLieuUser.SoQuanVeDich++;
 						dlqc.Bac = 5 - num2;
-						return 1;
+                        Data.SaveScore(dlqc.MauCo, duLieuUser.SoQuanVeDich);
+                        return 1;
 					}
 					return 0;
 				}

@@ -177,6 +177,7 @@ namespace ludogame_v4.TheHien
             this.Close();
         }
 
+        LuuDuLieuSql Data = new LuuDuLieuSql();
         private void btnSapBanCo_Click(object sender, EventArgs e)
         {
             panelXN.Controls.Add(TheHienXN);
@@ -184,6 +185,7 @@ namespace ludogame_v4.TheHien
 
             BC.SapBanCo(panelBC, TuyChonThamSo.tc);
 
+            Data.CreateBanSql();
             btnDoXiNgau.Enabled = true;
 
             isAutoRunning = false;
@@ -193,7 +195,7 @@ namespace ludogame_v4.TheHien
         private bool isAutoRunning = false;
         async void HamAuto()
         {
-            isAutoRunning = true;
+            isAutoRunning = TuyChonThamSo.KiemTraChoiVoiMay();
             while (isAutoRunning)
             {
                 await Task.Delay(1000);
