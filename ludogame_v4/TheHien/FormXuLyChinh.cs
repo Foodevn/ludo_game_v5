@@ -186,7 +186,7 @@ namespace ludogame_v4.TheHien
 
             BC.SapBanCo(panelBC, TuyChonThamSo.tc);
 
-            //Data.CreateBanSql();
+            Data.CreateBanSql();
             btnDoXiNgau.Enabled = true;
 
             isAutoRunning = false;

@@ -52,7 +52,7 @@ namespace ludogame_v4.TheHien
 
                     for (int i = 1; i < dt.Columns.Count; i++)
                     {
-                        listItem.SubItems.Add(row[i].ToString());
+                        listItem.SubItems.Add(((int)row[i]*10).ToString());
                     }
 
                     lvRank.Items.Add(listItem);
