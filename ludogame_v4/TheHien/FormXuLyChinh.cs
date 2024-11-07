@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -185,7 +186,7 @@ namespace ludogame_v4.TheHien
 
             BC.SapBanCo(panelBC, TuyChonThamSo.tc);
 
-            Data.CreateBanSql();
+            //Data.CreateBanSql();
             btnDoXiNgau.Enabled = true;
 
             isAutoRunning = false;
@@ -216,5 +217,13 @@ namespace ludogame_v4.TheHien
 
 
         }
+
+        private void btnRank_Click(object sender, EventArgs e)
+        {
+           BangXepHang bangXepHang = new BangXepHang();
+            bangXepHang.Show(this);
+            bangXepHang.ShowData();
+        }
     }
 }
+

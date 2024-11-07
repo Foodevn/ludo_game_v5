@@ -41,6 +41,7 @@
             this.btnThoat = new System.Windows.Forms.Button();
             this.panelXN = new System.Windows.Forms.Panel();
             this.picLuotQC = new System.Windows.Forms.PictureBox();
+            this.btnRank = new System.Windows.Forms.Button();
             this.panelBC.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLuotQC)).BeginInit();
@@ -179,6 +180,16 @@
             this.picLuotQC.TabIndex = 7;
             this.picLuotQC.TabStop = false;
             // 
+            // btnRank
+            // 
+            this.btnRank.Location = new System.Drawing.Point(822, 401);
+            this.btnRank.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRank.Name = "btnRank";
+            this.btnRank.Size = new System.Drawing.Size(102, 32);
+            this.btnRank.TabIndex = 1;
+            this.btnRank.Text = "Bảng xếp hạng";
+            this.btnRank.Click += new System.EventHandler(this.btnRank_Click);
+            // 
             // FormXuLyChinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -190,6 +201,7 @@
             this.Controls.Add(this.btnTuyChon);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSapBanCo);
+            this.Controls.Add(this.btnRank);
             this.Controls.Add(this.btnDoXiNgau);
             this.Controls.Add(this.panelBC);
             this.Controls.Add(this.picLuotQC);
@@ -215,5 +227,6 @@
         private System.Windows.Forms.Panel panelXN_Blue;
 		private System.Windows.Forms.Panel panelXN_Green;
 		private System.Windows.Forms.Panel panelXN_Yellow;
+        private System.Windows.Forms.Button btnRank;
     }
 }

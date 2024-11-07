@@ -61,6 +61,12 @@
     <Compile Include="login\ForgotPassword.Designer.cs">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="TheHien\BangXepHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TheHien\BangXepHang.Designer.cs">
+      <DependentUpon>BangXepHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="TheHien\FormXuLyChinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,9 @@
     </Compile>
     <EmbeddedResource Include="login\ForgotPassword.resx">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TheHien\BangXepHang.resx">
+      <DependentUpon>BangXepHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TheHien\FormXuLyChinh.resx">
       <DependentUpon>FormXuLyChinh.cs</DependentUpon>
