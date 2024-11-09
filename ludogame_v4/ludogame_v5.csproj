@@ -155,6 +155,7 @@
   <ItemGroup>
     <Content Include="bin\Debug\HinhBanCo\BANCO1.BMP" />
     <Content Include="bin\Debug\HinhBanCo\LOGO.BMP" />
+    <None Include="bin\Debug\HinhBangXepHang\BangXepHang.jpg" />
     <Content Include="bin\Debug\HinhNgua\CAM.GIF" />
     <Content Include="bin\Debug\HinhNgua\DO.GIF" />
     <Content Include="bin\Debug\HinhNgua\DUONG.GIF" />

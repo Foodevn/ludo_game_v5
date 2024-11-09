@@ -62,7 +62,7 @@
             // 
             // panelXN_Red
             // 
-            this.panelXN_Red.BackColor = System.Drawing.Color.RosyBrown;
+            this.panelXN_Red.BackColor = System.Drawing.Color.Transparent;
             this.panelXN_Red.Location = new System.Drawing.Point(466, 165);
             this.panelXN_Red.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelXN_Red.Name = "panelXN_Red";
@@ -71,7 +71,7 @@
             // 
             // panelXN_Blue
             // 
-            this.panelXN_Blue.BackColor = System.Drawing.Color.RosyBrown;
+            this.panelXN_Blue.BackColor = System.Drawing.Color.Transparent;
             this.panelXN_Blue.Location = new System.Drawing.Point(459, 454);
             this.panelXN_Blue.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelXN_Blue.Name = "panelXN_Blue";
@@ -80,7 +80,7 @@
             // 
             // panelXN_Green
             // 
-            this.panelXN_Green.BackColor = System.Drawing.Color.RosyBrown;
+            this.panelXN_Green.BackColor = System.Drawing.Color.Transparent;
             this.panelXN_Green.Location = new System.Drawing.Point(125, 454);
             this.panelXN_Green.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelXN_Green.Name = "panelXN_Green";
@@ -89,7 +89,7 @@
             // 
             // panelXN_Yellow
             // 
-            this.panelXN_Yellow.BackColor = System.Drawing.Color.RosyBrown;
+            this.panelXN_Yellow.BackColor = System.Drawing.Color.Transparent;
             this.panelXN_Yellow.Location = new System.Drawing.Point(125, 165);
             this.panelXN_Yellow.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelXN_Yellow.Name = "panelXN_Yellow";
@@ -117,7 +117,7 @@
             this.btnDoXiNgau.Name = "btnDoXiNgau";
             this.btnDoXiNgau.Size = new System.Drawing.Size(102, 32);
             this.btnDoXiNgau.TabIndex = 1;
-            this.btnDoXiNgau.Text = "Do xi ngau";
+            this.btnDoXiNgau.Text = "Đỗ xí ngầu";
             this.btnDoXiNgau.Click += new System.EventHandler(this.btnDoXiNgau_Click);
             // 
             // btnSapBanCo
@@ -127,7 +127,7 @@
             this.btnSapBanCo.Name = "btnSapBanCo";
             this.btnSapBanCo.Size = new System.Drawing.Size(102, 32);
             this.btnSapBanCo.TabIndex = 4;
-            this.btnSapBanCo.Text = "Sap Ban Co";
+            this.btnSapBanCo.Text = "Sắp bàn Cờ";
             this.btnSapBanCo.Click += new System.EventHandler(this.btnSapBanCo_Click);
             // 
             // label1
@@ -137,7 +137,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 34);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Luot di";
+            this.label1.Text = "Lượt đi";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnTuyChon
@@ -147,7 +147,7 @@
             this.btnTuyChon.Name = "btnTuyChon";
             this.btnTuyChon.Size = new System.Drawing.Size(102, 32);
             this.btnTuyChon.TabIndex = 9;
-            this.btnTuyChon.Text = "Tuy Chon";
+            this.btnTuyChon.Text = "Tùy Chọn";
             this.btnTuyChon.Click += new System.EventHandler(this.btnTuyChon_Click);
             // 
             // btnThoat
@@ -157,17 +157,17 @@
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(102, 34);
             this.btnThoat.TabIndex = 10;
-            this.btnThoat.Text = "Thoat";
+            this.btnThoat.Text = "Thoát";
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // panelXN
             // 
             this.panelXN.BackColor = System.Drawing.Color.Transparent;
             this.panelXN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelXN.Location = new System.Drawing.Point(784, 45);
+            this.panelXN.Location = new System.Drawing.Point(822, 45);
             this.panelXN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelXN.Name = "panelXN";
-            this.panelXN.Size = new System.Drawing.Size(180, 92);
+            this.panelXN.Size = new System.Drawing.Size(142, 92);
             this.panelXN.TabIndex = 11;
             // 
             // picLuotQC
@@ -182,10 +182,10 @@
             // 
             // btnRank
             // 
-            this.btnRank.Location = new System.Drawing.Point(822, 401);
+            this.btnRank.Location = new System.Drawing.Point(822, 373);
             this.btnRank.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRank.Name = "btnRank";
-            this.btnRank.Size = new System.Drawing.Size(102, 32);
+            this.btnRank.Size = new System.Drawing.Size(102, 54);
             this.btnRank.TabIndex = 1;
             this.btnRank.Text = "Bảng xếp hạng";
             this.btnRank.Click += new System.EventHandler(this.btnRank_Click);
@@ -210,7 +210,7 @@
             this.MinimizeBox = false;
             this.Name = "FormXuLyChinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Co Ca Ngua";
+            this.Text = "Trò chơi: cờ cá ngựa";
             this.Load += new System.EventHandler(this.XuLyChinh_Load);
             this.panelBC.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

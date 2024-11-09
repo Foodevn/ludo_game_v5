@@ -131,7 +131,7 @@ namespace ludogame_v4.TheHien
             RemoveItemsControls();
             theHienXN.LoadImageXiNgau1(Application.StartupPath + "/HinhXiNgau/1.jpg");
             theHienXN.LoadImageXiNgau2(Application.StartupPath + "/HinhXiNgau/6.jpg");
-            this.groupBox2.Controls.Add(theHienXN);
+            this.panel1.Controls.Add(theHienXN);
 
             theHienXN.DinhViXiNgau();
             for (int i = 0; i < 4; i++)

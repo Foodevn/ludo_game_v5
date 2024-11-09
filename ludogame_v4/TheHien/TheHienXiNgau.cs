@@ -61,6 +61,7 @@ namespace ludogame_v4.TheHien
 			else
 			{
 				picXN1.Location = new Point(8, 8);
+				picXN2.Location = new Point(40, 8);
 				if (!picXN2.Visible)
 				{
 					picXN2.Visible = true;

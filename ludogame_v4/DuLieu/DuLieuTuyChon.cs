@@ -121,7 +121,7 @@ namespace ludogame_v4.DuLieu
 			}
 		}
 
-		public int[] SoMay = new int[4];
+		public int[] SoMay = new int[4];  // Máy chơi
 
 		public DuLieuTuyChon()
 		{

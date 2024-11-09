@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ludogame_v4.TheHien;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace ludogame_v4
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new TheHien.FormXuLyChinh());
+			Application.Run(new Login());
 		}
 	}
 }

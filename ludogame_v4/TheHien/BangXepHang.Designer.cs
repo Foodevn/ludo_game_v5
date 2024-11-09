@@ -33,6 +33,7 @@
             // 
             // lvRank
             // 
+            this.lvRank.BackgroundImage = global::ludogame_v4.Properties.Resources.BangXepHang;
             this.lvRank.HideSelection = false;
             this.lvRank.Location = new System.Drawing.Point(12, 12);
             this.lvRank.Name = "lvRank";
@@ -49,7 +50,7 @@
             this.Controls.Add(this.lvRank);
             this.Name = "BangXepHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BangXepHang";
+            this.Text = "Bảng Xếp Hạng";
             this.ResumeLayout(false);
 
         }

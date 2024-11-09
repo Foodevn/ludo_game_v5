@@ -19,7 +19,7 @@ namespace ludogame_v4.DuLieu
 
 		private int Mau;
 
-		public int Bac;
+		public int Bac; //Số bậc về đích 
 
 		private int State;
 

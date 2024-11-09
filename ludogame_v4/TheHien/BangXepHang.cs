@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ludogame_v4.TheHien
 {
@@ -43,6 +44,7 @@ namespace ludogame_v4.TheHien
                 foreach (DataColumn column in dt.Columns)
                 {
                     lvRank.Columns.Add(column.ColumnName);
+                    
                 }
 
                 // Thêm các dòng từ DataTable vào ListView
@@ -59,6 +61,7 @@ namespace ludogame_v4.TheHien
                 }
 
                 // Tùy chỉnh ListView
+                lvRank.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
                 lvRank.View = View.Details; // Hiển thị dưới dạng chi tiết
             }
         }
