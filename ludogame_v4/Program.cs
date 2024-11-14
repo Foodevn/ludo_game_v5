@@ -17,7 +17,7 @@ namespace ludogame_v4
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Login());
+			Application.Run(new TheHien.FormXuLyChinh());
 		}
 	}
 }

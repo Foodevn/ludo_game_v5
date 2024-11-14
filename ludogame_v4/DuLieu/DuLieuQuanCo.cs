@@ -21,27 +21,7 @@ namespace ludogame_v4.DuLieu
 
 		public int Bac; //Số bậc về đích 
 
-		private int State;
-
 		public int Count;
-
-		public int TrangThaiQuanCo
-		{
-			get
-			{
-				return State;
-			}
-			set
-			{
-				State = value;
-			}
-		}
-
-		public int SanSang => 0;
-
-		public int DangDi => 1;
-
-		public int VeDich => 2;
 
 		public int MauCo
 		{
@@ -104,8 +84,7 @@ namespace ludogame_v4.DuLieu
 		}
 
 		public DuLieuQuanCo()
-		{
-			TrangThaiQuanCo = SanSang;
+		{		
 			ViTriTrenBanCo = -1;
 			Count = 0;
 			Bac = 0;

@@ -161,7 +161,8 @@ namespace ludogame_v4.TheHien
             if (!bEnter)
             {
                 BC.DLBC.UserHienTai = BC.DLBC.UserHienTai % BC.DLBC.SoNguoichoi + 1;
-            }
+            }   
+            
         }
 
 
@@ -187,6 +188,7 @@ namespace ludogame_v4.TheHien
             BC.SapBanCo(panelBC, TuyChonThamSo.tc);
 
             Data.CreateBanSql();
+            btnSapBanCo.Enabled = false;
             btnDoXiNgau.Enabled = true;
 
             isAutoRunning = false;

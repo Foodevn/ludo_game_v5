@@ -29,7 +29,7 @@ namespace ludogame_v4.TheHien
                 conn.Open();
 
                 SqlCommand cmd = conn.CreateCommand();
-                cmd.CommandText = "SELECT * FROM ChartScore";
+                cmd.CommandText = "SELECT BlueScore, RedScore, YellowScore, GreenScore FROM ChartScore";
 
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
@@ -50,9 +50,9 @@ namespace ludogame_v4.TheHien
                 // Thêm các dòng từ DataTable vào ListView
                 foreach (DataRow row in dt.Rows)
                 {
-                    ListViewItem listItem = new ListViewItem(row[0].ToString());
+                    ListViewItem listItem = new ListViewItem(((int)row[0]*10).ToString());
 
-                    for (int i = 1; i < dt.Columns.Count; i++)
+                    for (int i = 0; i < dt.Columns.Count; i++)
                     {
                         listItem.SubItems.Add(((int)row[i]*10).ToString());
                     }
