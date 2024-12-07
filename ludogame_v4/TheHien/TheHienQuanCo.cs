@@ -191,7 +191,40 @@ namespace ludogame_v4.TheHien
 			return 0;
 		}
 
-		public bool KiemTraRaQuan()
+        public int KiemTraQuanCoDiDc() // Kiem tra có đi dc hay không
+        {
+            if (dlqc.ViTriTrenBanCo == -1)
+            {
+                if (KiemTraRaQuan() && dlbc.arrBC[dlqc.ViTriRaQuan] != dlqc.MauCo)
+                {
+
+                    return 1;
+                }
+            }
+            else
+            {
+                int num = dlbc.LayGiaTriXN();
+                if (dlqc.ViTriTrenBanCo == dlqc.ViTriVeDich)
+                {
+                    if (KiemTraVeDich() && dlqc.Bac == 0)
+                    {
+                        return 1;
+                    }
+                    return 0;
+                }
+                if (dlqc.Count + num > dlbc.SoOBc)
+                {
+                    return 0;
+                }
+                if (KiemTraDiDuoc(num, dlqc.ViTriTrenBanCo) && dlbc.arrBC[(dlqc.ViTriTrenBanCo + num) % 56] != dlqc.MauCo)
+                {
+                    return 1;
+                }
+            }
+            return 0;
+        }
+
+        public bool KiemTraRaQuan()
 		{
 			if (dlbc.SoXN == 1)
 			{
