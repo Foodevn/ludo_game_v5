@@ -14,7 +14,7 @@ namespace ludogame_v4.TheHien
 {
 	public partial class TheHienQuanCo : UserControl
 	{
-		public PictureBox picQC;
+		//public PictureBox picQC;
 
 		private Point vtTheHien;
 
@@ -76,28 +76,34 @@ namespace ludogame_v4.TheHien
 			TrangThaiClick = false;
 		}
 
-		
+        public void picQC_Click(object sender, EventArgs e)
+        {
+            if (!TrangThaiClick || ThucHienNuocDi() != 1)
+            {
+                return;
+            }
+            TrangThaiClick = false;
+            for (int i = 0; i < User.SoQuanCo; i++)
+            {
+                QuanCo quanCo = (QuanCo)User.arrQC[i];
+                if (quanCo.QCTH.TrangThaiClick)
+                {
+                    quanCo.QCTH.TrangThaiClick = false;
 
-		
+                }
+            }
+            if (dlbc.gtXN1 != 1 && dlbc.gtXN1 != 6)
+                UserTiepTheo();
+        }
 
-		public void picQC_Click(object sender, EventArgs e)
-		{
-			if (!TrangThaiClick || ThucHienNuocDi() != 1)
-			{
-				return;
-			}
-			TrangThaiClick = false;
-			for (int i = 0; i < User.SoQuanCo; i++)
-			{
-				QuanCo quanCo = (QuanCo)User.arrQC[i];
-				if (quanCo.QCTH.TrangThaiClick)
-				{
-					quanCo.QCTH.TrangThaiClick = false;
-				}
-			}
-		}
 
-		public string LayHinhQuanCo(int m)
+
+        public void UserTiepTheo()
+        {
+            dlbc.UserHienTai = dlbc.UserHienTai % dlbc.SoNguoichoi + 1;
+        }
+
+        public string LayHinhQuanCo(int m)
 		{
 			switch (m)
 			{
@@ -120,8 +126,18 @@ namespace ludogame_v4.TheHien
 		public void HienThi(int m)
 		{
 			LayHinhQuanCo(m);
-			picQC.Image = new Bitmap(Application.StartupPath + "/HinhNgua/" + strFileName);
-		}
+			//picQC.Image = new Bitmap(Application.StartupPath + "/HinhNgua/" + strFileName);
+            //picQC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            string imagePath = Application.StartupPath + "/Hinhngua/" + strFileName ;
+            Bitmap originalImage = new Bitmap(imagePath);
+
+            // Tạo ảnh mới với kích thước mong muốn
+            int newWidth = (int)(originalImage.Width *1.3) ;  // Phóng to gấp đôi
+            int newHeight = (int)(originalImage.Height * 1.3) ;
+            Bitmap resizedImage = new Bitmap(originalImage, newWidth, newHeight);
+
+            picQC.Image = resizedImage;
+        }
 
 		public void LoadImageQuanCo(Bitmap bmp)
 		{

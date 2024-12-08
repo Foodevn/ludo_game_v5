@@ -42,15 +42,16 @@ namespace ludogame_v4.XuLy
             {
                 if (panel.Controls[num].Name != "panelXN_Red" && panel.Controls[num].Name != "panelXN_Blue"&&
 
-					panel.Controls[num].Name != "panelXN_Yellow"&& panel.Controls[num].Name != "panelXN_Green")
+					panel.Controls[num].Name != "panelXN_Yellow"&& panel.Controls[num].Name != "panelXN_Green"
+                    && panel.Controls[num].Name != "panelXN")
                     panel.Controls.RemoveAt(num);
             }
         }
 
         public void TaoViTriQuan(Point vtCB, int i, DuLieuUser User, Panel panel)
         {
-            int num = -24;
-            int num2 = -24;
+            int num = -40;
+            int num2 = -40;
             if (i == 1)
             {
                 num2 = -num2;
@@ -169,9 +170,12 @@ namespace ludogame_v4.XuLy
         public Point LayVT(int vtTrenBC)
         {
             Point result = new Point(224, 220);
+            result.X = (int)(result.X * 1.2805);
+            result.Y = (int)(result.Y * 1.2805);
+
             int num = 0;
             int num2 = 0;
-            int num3 = 29;
+            int num3 = 36; // Khoảng cách giữa hai ô cờ liên tiếp (theo pixel)
             if (vtTrenBC == 55)
             {
                 num2 = 7 * num3;

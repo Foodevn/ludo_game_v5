@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace ludogame_v4.TheHien
 {
     public enum Colors
@@ -54,7 +55,10 @@ namespace ludogame_v4.TheHien
             InitializeComponent();
             TheHienXN.UserControlClicked += MyControl_UserControlClicked;
             //panelXN.Controls.Add(TheHienXN);
-
+            TheHienXN.Size = new Size((int)(TheHienXN.Width * 1.5), (int)(TheHienXN.Height * 1.5));
+            TheHienXN.picXN1.Size = new Size((int)(TheHienXN.picXN1.Width * 1.2), (int)(TheHienXN.picXN1.Height * 1.2));
+            TheHienXN.picXN2.Size = new Size((int)(TheHienXN.picXN2.Width * 1.2), (int)(TheHienXN.picXN2.Height * 1.2));
+           
         }
 
         private void MyControl_UserControlClicked(object sender, EventArgs e)
@@ -100,12 +104,34 @@ namespace ludogame_v4.TheHien
             return text;
         }
 
+        public void GetText()
+        {
+            switch (BC.DLBC.UserHienTai)
+            {
+                case 1:
+                    lbTextNameUser.Text = TuyChonThamSo.tc.PlayerNames[0];
+ 
+                    break;
+                case 2:
+                    lbTextNameUser.Text = TuyChonThamSo.tc.PlayerNames[1];
+
+                    break;
+                case 3:
+                    lbTextNameUser.Text = TuyChonThamSo.tc.PlayerNames[2];
+
+                    break;
+                case 4:
+                    lbTextNameUser.Text = TuyChonThamSo.tc.PlayerNames[3];
+                    break;
+            }   
+        }
+
         public void ResetManHinh()
         {
             panelBC.BackgroundImage = new Bitmap(TuyChonThamSo.tc.HinhBanCo);
 
             TheHienXN.SoXiNgauTheHien = TuyChonThamSo.tc.SoHotXiNgau;
-            TheHienXN.DinhViXiNgau();
+            TheHienXN.DinhViXiNgau2();
             BC = new BanCo();
 
             BC.DLBC.CapNhatDL(TuyChonThamSo.tc);
@@ -127,9 +153,12 @@ namespace ludogame_v4.TheHien
             return false;
         }
 
+        //int a = 0; // TEST xong xóa
         private void btnDoXiNgau_Click(object sender, EventArgs e)
         {
+            
             picLuotQC.Image = new Bitmap(GetStrImage());
+            GetText();
             switch (currentTurn)
             {
                 case Colors.Green:
@@ -153,10 +182,22 @@ namespace ludogame_v4.TheHien
                     panelXN_Blue.BringToFront();
                     break;
                 default:
-
                     break;
             }
+            
+            //if (a == 0) // TEST xong xóa
+            //{
+            //    XN.gt1 = 1;
+            //    a++;
+
+            //}
+            //else
+            //{
+            //    XN.gt1 = 6;
+            //    a--;
+            //}
             BC.DLBC.CapNhatGTXN(XN);
+
             BC.XuLyBanCo();
 
             if (BC.KiemTraNguoiChoiDiDc() == false) // Có đi dc không, nếu không thì chuyển User tiếp thep
@@ -184,14 +225,16 @@ namespace ludogame_v4.TheHien
             this.Close();
         }
 
-      
+
         private void btnSapBanCo_Click(object sender, EventArgs e)
         {
             panelXN.Controls.Add(TheHienXN);
             ResetManHinh();
 
             BC.SapBanCo(panelBC, TuyChonThamSo.tc);
-
+            panelXN.BringToFront();
+            panelXN.BringToFront();
+            panelXN.BringToFront();
             Data.CreateBanSql();
             btnSapBanCo.Enabled = false;
             btnDoXiNgau.Enabled = true;

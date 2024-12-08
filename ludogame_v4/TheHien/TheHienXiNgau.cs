@@ -12,9 +12,9 @@ namespace ludogame_v4.TheHien
 {
 	public partial class TheHienXiNgau : UserControl
 	{
-		private PictureBox picXN1;
+		public PictureBox picXN1;
 
-		private PictureBox picXN2;
+		public PictureBox picXN2;
 
 		private int soXNTH;
 
@@ -69,7 +69,29 @@ namespace ludogame_v4.TheHien
 			}
 		}
 
-		public void LoadImageXiNgau1(string strFileName)
+        public void DinhViXiNgau2()
+        {
+            if (SoXiNgauTheHien == 1)
+            {
+                picXN1.Location = new Point(22, 8);
+
+                if (picXN2.Visible)
+                {
+                    picXN2.Visible = false;
+                }
+            }
+            else
+            {
+                picXN1.Location = new Point(8, 8);
+                picXN2.Location = new Point(56, 8);
+                if (!picXN2.Visible)
+                {
+                    picXN2.Visible = true;
+                }
+            }
+        }
+
+        public void LoadImageXiNgau1(string strFileName)
 		{
 			picXN1.Image = new Bitmap(strFileName);
 

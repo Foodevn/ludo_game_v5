@@ -28,20 +28,36 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			components = new System.ComponentModel.Container();
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.picQC = new System.Windows.Forms.PictureBox();
-			this.picQC.BackColor = System.Drawing.Color.Transparent;
-			this.picQC.Location = new System.Drawing.Point(8, 8);
-			this.picQC.Name = "picQC";
-			this.picQC.Size = new System.Drawing.Size(24, 24);
-			this.picQC.TabIndex = 0;
-			this.picQC.TabStop = false;
-			this.picQC.Click += new System.EventHandler(picQC_Click);
-			base.Name = "TheHienQuanCo";
-			base.Size = new System.Drawing.Size(72, 72);
+            this.picQC = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picQC)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // picQC
+            // 
+            this.picQC.BackColor = System.Drawing.Color.Transparent;
+            this.picQC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picQC.Location = new System.Drawing.Point(8, 8);
+            this.picQC.Name = "picQC";
+            this.picQC.Size = new System.Drawing.Size(40, 40);
+            this.picQC.TabIndex = 0;
+            this.picQC.TabStop = false;
+            this.picQC.Click += new System.EventHandler(this.picQC_Click);
+            // 
+            // TheHienQuanCo
+            // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.picQC);
+            this.Name = "TheHienQuanCo";
+            this.Size = new System.Drawing.Size(100, 100);
+            ((System.ComponentModel.ISupportInitialize)(this.picQC)).EndInit();
+            this.ResumeLayout(false);
+
 		}
 
-		#endregion
-	}
+        #endregion
+
+        public System.Windows.Forms.PictureBox picQC;
+    }
 }

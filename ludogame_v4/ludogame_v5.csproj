@@ -132,6 +132,9 @@
     <EmbeddedResource Include="login\SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TheHien\TheHienQuanCo.resx">
+      <DependentUpon>TheHienQuanCo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TheHien\TheHienXiNgau.resx">
       <DependentUpon>TheHienXiNgau.cs</DependentUpon>
     </EmbeddedResource>
