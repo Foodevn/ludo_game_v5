@@ -29,20 +29,20 @@
 		private void InitializeComponent()
 		{
             this.panelBC = new System.Windows.Forms.Panel();
+            this.panelXN = new System.Windows.Forms.Panel();
             this.panelXN_Red = new System.Windows.Forms.Panel();
             this.panelXN_Blue = new System.Windows.Forms.Panel();
             this.panelXN_Green = new System.Windows.Forms.Panel();
             this.panelXN_Yellow = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnDoXiNgau = new System.Windows.Forms.Button();
             this.btnSapBanCo = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnTuyChon = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
-            this.panelXN = new System.Windows.Forms.Panel();
-            this.picLuotQC = new System.Windows.Forms.PictureBox();
             this.btnRank = new System.Windows.Forms.Button();
             this.lbTextNameUser = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picLuotQC = new System.Windows.Forms.PictureBox();
             this.panelBC.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLuotQC)).BeginInit();
@@ -51,17 +51,27 @@
             // panelBC
             // 
             this.panelBC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelBC.Controls.Add(this.panelXN);
             this.panelBC.Controls.Add(this.panelXN_Red);
             this.panelBC.Controls.Add(this.panelXN_Blue);
             this.panelBC.Controls.Add(this.panelXN_Green);
             this.panelBC.Controls.Add(this.panelXN_Yellow);
             this.panelBC.Controls.Add(this.pictureBox1);
+            this.panelBC.Controls.Add(this.panelXN);
             this.panelBC.Location = new System.Drawing.Point(197, 18);
             this.panelBC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelBC.Name = "panelBC";
             this.panelBC.Size = new System.Drawing.Size(911, 910);
             this.panelBC.TabIndex = 0;
+            // 
+            // panelXN
+            // 
+            this.panelXN.BackColor = System.Drawing.Color.Transparent;
+            this.panelXN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelXN.Location = new System.Drawing.Point(396, 412);
+            this.panelXN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelXN.Name = "panelXN";
+            this.panelXN.Size = new System.Drawing.Size(142, 92);
+            this.panelXN.TabIndex = 11;
             // 
             // panelXN_Red
             // 
@@ -99,20 +109,6 @@
             this.panelXN_Yellow.Name = "panelXN_Yellow";
             this.panelXN_Yellow.Size = new System.Drawing.Size(155, 86);
             this.panelXN_Yellow.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.pictureBox1.BackgroundImage = global::ludogame_v4.Properties.Resources.BANCO1;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(911, 910);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // btnDoXiNgau
             // 
@@ -171,26 +167,6 @@
             this.btnThoat.Text = "Thoát";
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // panelXN
-            // 
-            this.panelXN.BackColor = System.Drawing.Color.Transparent;
-            this.panelXN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelXN.Location = new System.Drawing.Point(396, 412);
-            this.panelXN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelXN.Name = "panelXN";
-            this.panelXN.Size = new System.Drawing.Size(142, 92);
-            this.panelXN.TabIndex = 11;
-            // 
-            // picLuotQC
-            // 
-            this.picLuotQC.BackColor = System.Drawing.Color.Transparent;
-            this.picLuotQC.Location = new System.Drawing.Point(1214, 135);
-            this.picLuotQC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.picLuotQC.Name = "picLuotQC";
-            this.picLuotQC.Size = new System.Drawing.Size(33, 34);
-            this.picLuotQC.TabIndex = 7;
-            this.picLuotQC.TabStop = false;
-            // 
             // btnRank
             // 
             this.btnRank.Location = new System.Drawing.Point(1234, 551);
@@ -211,6 +187,30 @@
             this.lbTextNameUser.TabIndex = 6;
             this.lbTextNameUser.Text = "User";
             this.lbTextNameUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.pictureBox1.BackgroundImage = global::ludogame_v4.Properties.Resources.BANCO1;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(911, 910);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // picLuotQC
+            // 
+            this.picLuotQC.BackColor = System.Drawing.Color.Transparent;
+            this.picLuotQC.Location = new System.Drawing.Point(1214, 135);
+            this.picLuotQC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picLuotQC.Name = "picLuotQC";
+            this.picLuotQC.Size = new System.Drawing.Size(33, 34);
+            this.picLuotQC.TabIndex = 7;
+            this.picLuotQC.TabStop = false;
             // 
             // FormXuLyChinh
             // 

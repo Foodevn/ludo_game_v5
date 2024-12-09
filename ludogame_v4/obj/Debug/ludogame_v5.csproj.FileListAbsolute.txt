@@ -89,3 +89,4 @@ D:\ludo_game_v5 _ TEST\ludogame_v4\obj\Debug\ludogame_v5.csproj.CoreCompileInput
 D:\ludo_game_v5 _ TEST\ludogame_v4\obj\Debug\ludogame_v4.exe
 D:\ludo_game_v5 _ TEST\ludogame_v4\obj\Debug\ludogame_v4.pdb
 D:\ludo_game_v5 _ TEST\ludogame_v4\obj\Debug\ludogame_v4.TheHien.TheHienQuanCo.resources
+D:\ludo_game_v5 _ TEST\ludogame_v4\obj\Debug\ludogame_v4.login.PageHome.resources

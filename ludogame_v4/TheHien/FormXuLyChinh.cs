@@ -1,4 +1,5 @@
 ﻿using ludogame_v4.DuLieu;
+using ludogame_v4.login;
 using ludogame_v4.XuLy;
 using System;
 using System.Collections.Generic;
@@ -58,7 +59,7 @@ namespace ludogame_v4.TheHien
             TheHienXN.Size = new Size((int)(TheHienXN.Width * 1.5), (int)(TheHienXN.Height * 1.5));
             TheHienXN.picXN1.Size = new Size((int)(TheHienXN.picXN1.Width * 1.2), (int)(TheHienXN.picXN1.Height * 1.2));
             TheHienXN.picXN2.Size = new Size((int)(TheHienXN.picXN2.Width * 1.2), (int)(TheHienXN.picXN2.Height * 1.2));
-           
+
         }
 
         private void MyControl_UserControlClicked(object sender, EventArgs e)
@@ -72,6 +73,7 @@ namespace ludogame_v4.TheHien
             //LoadHinhBC();
             XN.SoXN = TuyChonThamSo.tc.SoHotXiNgau;
             btnDoXiNgau.Enabled = false;
+            CreateMenu();
 
         }
 
@@ -110,7 +112,7 @@ namespace ludogame_v4.TheHien
             {
                 case 1:
                     lbTextNameUser.Text = TuyChonThamSo.tc.PlayerNames[0];
- 
+
                     break;
                 case 2:
                     lbTextNameUser.Text = TuyChonThamSo.tc.PlayerNames[1];
@@ -123,7 +125,7 @@ namespace ludogame_v4.TheHien
                 case 4:
                     lbTextNameUser.Text = TuyChonThamSo.tc.PlayerNames[3];
                     break;
-            }   
+            }
         }
 
         public void ResetManHinh()
@@ -156,7 +158,7 @@ namespace ludogame_v4.TheHien
         //int a = 0; // TEST xong xóa
         private void btnDoXiNgau_Click(object sender, EventArgs e)
         {
-            
+
             picLuotQC.Image = new Bitmap(GetStrImage());
             GetText();
             switch (currentTurn)
@@ -184,7 +186,7 @@ namespace ludogame_v4.TheHien
                 default:
                     break;
             }
-            
+
             //if (a == 0) // TEST xong xóa
             //{
             //    XN.gt1 = 1;
@@ -292,6 +294,40 @@ namespace ludogame_v4.TheHien
             bangXepHang.Show(this);
             bangXepHang.ShowData();
         }
+
+        login.PageHome pageHome = new login.PageHome();
+        Panel menu = null;
+
+        void CreateMenu()
+        {
+            Clear_pnl(); // Xóa menu 
+            menu = new Panel();
+            menu.Dock = DockStyle.Fill;
+            this.Controls.Add(menu);
+            
+            pageHome.TopLevel = false;
+            menu.Controls.Add(pageHome);
+            pageHome.Show();
+            menu.BringToFront();
+            // Sự kiện khi ấn nút Bắt đầu
+            pageHome.FormClosed += new FormClosedEventHandler(PageHome_OnClose);
+        }
+
+        private void PageHome_OnClose(object sender, EventArgs e)
+        {
+            Clear_pnl();
+        } 
+
+        void Clear_pnl()
+        {
+            if (menu != null) // Có thì mới xóa 
+            {
+                this.Controls.Remove(menu);
+                menu.Dispose();
+                menu = null;
+            }
+        }
+
     }
 }
 
