@@ -12,14 +12,22 @@ namespace ludogame_v4.login
 {
     public partial class PageHome : Form
     {
+        
         public PageHome()
         {
             InitializeComponent();
-        }
-        
-        private void button1_Click(object sender, EventArgs e)
-        {
+			
+		}
+
+		private void btnStart_Click(object sender, EventArgs e)
+		{
             this.Close();
-        }
-    }
+		}
+
+		private void btnChampion_Click(object sender, EventArgs e)
+		{
+			TheHien.Menu.Lui = 3;
+			this.Close();
+		}
+	}
 }

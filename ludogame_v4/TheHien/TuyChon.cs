@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,19 +14,10 @@ namespace ludogame_v4.TheHien
 {
     public partial class TuyChon : Form
     {
-        private TabControl tabControl1;
-
-        private TabPage XiNgau;
-
-        private TabPage RaQuanVeDich;
-
-        private TabPage NguoiChoi;
 
         private GroupBox groupBox1;
 
         private Button btnApDung;
-
-        private GroupBox groupBox2;
 
         private GroupBox groupBox3;
 
@@ -51,13 +43,7 @@ namespace ludogame_v4.TheHien
 
         private Label label10;
 
-        private TabPage BanCo;
-
-        private Button btnThayDoi;
-
         private OpenFileDialog openFileDlg;
-
-        private PictureBox picBC;
 
         private ComboBox cmbRQ2;
 
@@ -162,7 +148,7 @@ namespace ludogame_v4.TheHien
             picQuan2.Image = new Bitmap(Application.StartupPath + "/HinhNgua/" + qc.LayHinhQuanCo(2));
             picQuan3.Image = new Bitmap(Application.StartupPath + "/HinhNgua/" + qc.LayHinhQuanCo(3));
             picQuan4.Image = new Bitmap(Application.StartupPath + "/HinhNgua/" + qc.LayHinhQuanCo(4));
-            picBC.Image = new Bitmap(Application.StartupPath + "/HinhBanCo/banco1.bmp");
+            //picBC.Image = new Bitmap(Application.StartupPath + "/HinhBanCo/banco1.bmp");
         }
 
         private void RemoveItemsControls()
@@ -258,7 +244,7 @@ namespace ludogame_v4.TheHien
             {
                 try
                 {
-                    picBC.Image = new Bitmap(fileName);
+                    //picBC.Image = new Bitmap(fileName);
                     tc.HinhBanCo = fileName;
                 }
                 catch
@@ -321,7 +307,7 @@ namespace ludogame_v4.TheHien
             else
                 tc.SoMay[3] = 0;
 
-            Close();
+            this.Close();
         }
 
         private void MotXN_Click(object sender, EventArgs e)
@@ -345,5 +331,12 @@ namespace ludogame_v4.TheHien
 
             return false;
         }
-    }
+
+		private void lbLui_Click(object sender, EventArgs e)
+		{
+            TheHien.Menu.Lui = 1;
+            Debug.WriteLine(TheHien.Menu.Lui);
+            this.Close();
+		}
+	}
 }

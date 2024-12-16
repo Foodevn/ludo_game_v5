@@ -28,82 +28,127 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(62, 145);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(188, 73);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Start Game";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(62, 234);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(188, 73);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Rules";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(62, 323);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(188, 73);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Login";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(62, 412);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(188, 73);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Champion";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // PageHome
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1508, 944);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "PageHome";
-            this.Text = "PageHome";
-            this.ResumeLayout(false);
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PageHome));
+			this.btnStart = new System.Windows.Forms.Button();
+			this.panelButton = new System.Windows.Forms.Panel();
+			this.btnExit = new System.Windows.Forms.Button();
+			this.btnChampion = new System.Windows.Forms.Button();
+			this.btnRules = new System.Windows.Forms.Button();
+			this.panelButton.SuspendLayout();
+			this.SuspendLayout();
+			// 
+			// btnStart
+			// 
+			this.btnStart.BackColor = System.Drawing.Color.Transparent;
+			this.btnStart.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnStart.Dock = System.Windows.Forms.DockStyle.Top;
+			this.btnStart.FlatAppearance.BorderSize = 0;
+			this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnStart.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.btnStart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnStart.Location = new System.Drawing.Point(0, 0);
+			this.btnStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.btnStart.Name = "btnStart";
+			this.btnStart.Size = new System.Drawing.Size(248, 70);
+			this.btnStart.TabIndex = 1;
+			this.btnStart.Text = "Start Game";
+			this.btnStart.UseVisualStyleBackColor = false;
+			this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+			// 
+			// panelButton
+			// 
+			this.panelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+			this.panelButton.BackColor = System.Drawing.Color.Transparent;
+			this.panelButton.Controls.Add(this.btnExit);
+			this.panelButton.Controls.Add(this.btnChampion);
+			this.panelButton.Controls.Add(this.btnRules);
+			this.panelButton.Controls.Add(this.btnStart);
+			this.panelButton.Location = new System.Drawing.Point(540, 103);
+			this.panelButton.Name = "panelButton";
+			this.panelButton.Size = new System.Drawing.Size(248, 386);
+			this.panelButton.TabIndex = 1;
+			// 
+			// btnExit
+			// 
+			this.btnExit.BackColor = System.Drawing.Color.Transparent;
+			this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnExit.Dock = System.Windows.Forms.DockStyle.Top;
+			this.btnExit.FlatAppearance.BorderSize = 0;
+			this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnExit.Location = new System.Drawing.Point(0, 210);
+			this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.btnExit.Name = "btnExit";
+			this.btnExit.Size = new System.Drawing.Size(248, 70);
+			this.btnExit.TabIndex = 5;
+			this.btnExit.Text = "Exit";
+			this.btnExit.UseVisualStyleBackColor = false;
+			// 
+			// btnChampion
+			// 
+			this.btnChampion.BackColor = System.Drawing.Color.Transparent;
+			this.btnChampion.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnChampion.Dock = System.Windows.Forms.DockStyle.Top;
+			this.btnChampion.FlatAppearance.BorderSize = 0;
+			this.btnChampion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnChampion.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnChampion.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.btnChampion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnChampion.Location = new System.Drawing.Point(0, 140);
+			this.btnChampion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.btnChampion.Name = "btnChampion";
+			this.btnChampion.Size = new System.Drawing.Size(248, 70);
+			this.btnChampion.TabIndex = 3;
+			this.btnChampion.Text = "Champion";
+			this.btnChampion.UseVisualStyleBackColor = false;
+			this.btnChampion.Click += new System.EventHandler(this.btnChampion_Click);
+			// 
+			// btnRules
+			// 
+			this.btnRules.BackColor = System.Drawing.Color.Transparent;
+			this.btnRules.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnRules.Dock = System.Windows.Forms.DockStyle.Top;
+			this.btnRules.FlatAppearance.BorderSize = 0;
+			this.btnRules.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnRules.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnRules.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.btnRules.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnRules.Location = new System.Drawing.Point(0, 70);
+			this.btnRules.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.btnRules.Name = "btnRules";
+			this.btnRules.Size = new System.Drawing.Size(248, 70);
+			this.btnRules.TabIndex = 2;
+			this.btnRules.Text = "Rules";
+			this.btnRules.UseVisualStyleBackColor = false;
+			// 
+			// PageHome
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.ClientSize = new System.Drawing.Size(1340, 755);
+			this.Controls.Add(this.panelButton);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+			this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.MinimumSize = new System.Drawing.Size(1340, 755);
+			this.Name = "PageHome";
+			this.Text = "PageHome";
+			this.panelButton.ResumeLayout(false);
+			this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-    }
+        private System.Windows.Forms.Button btnStart;
+		private System.Windows.Forms.Panel panelButton;
+		private System.Windows.Forms.Button btnChampion;
+		private System.Windows.Forms.Button btnRules;
+		private System.Windows.Forms.Button btnExit;
+	}
 }

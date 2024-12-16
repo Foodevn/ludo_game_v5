@@ -20,9 +20,9 @@ namespace ludogame_v4.TheHien
             InitializeComponent();
         }
 
-        public void ShowData()
+        private void ShowData()
         {
-            string connectionString = "server=.; database = ChartScore; Integrated Security = true; ";
+            string connectionString = "server=.; database = LudoGame; Integrated Security = true; ";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -66,5 +66,9 @@ namespace ludogame_v4.TheHien
             }
         }
 
-    }
+		private void BangXepHang_Load(object sender, EventArgs e)
+		{
+            ShowData();
+		}
+	}
 }

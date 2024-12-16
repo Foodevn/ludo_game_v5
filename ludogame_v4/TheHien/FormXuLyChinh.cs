@@ -73,7 +73,7 @@ namespace ludogame_v4.TheHien
             //LoadHinhBC();
             XN.SoXN = TuyChonThamSo.tc.SoHotXiNgau;
             btnDoXiNgau.Enabled = false;
-            CreateMenu();
+           // CreateMenu();
 
         }
 
@@ -232,7 +232,6 @@ namespace ludogame_v4.TheHien
         {
             panelXN.Controls.Add(TheHienXN);
             ResetManHinh();
-
             BC.SapBanCo(panelBC, TuyChonThamSo.tc);
             panelXN.BringToFront();
             panelXN.BringToFront();
@@ -292,7 +291,7 @@ namespace ludogame_v4.TheHien
         {
             BangXepHang bangXepHang = new BangXepHang();
             bangXepHang.Show(this);
-            bangXepHang.ShowData();
+            //bangXepHang.ShowData();
         }
 
         login.PageHome pageHome = new login.PageHome();
@@ -328,6 +327,7 @@ namespace ludogame_v4.TheHien
             }
         }
 
-    }
+		
+	}
 }
 
