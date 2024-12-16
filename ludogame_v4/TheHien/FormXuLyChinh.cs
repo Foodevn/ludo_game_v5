@@ -154,7 +154,7 @@ namespace ludogame_v4.TheHien
             return false;
         }
 
-        int a = 0; // TEST xong xóa
+        //int a = 0; // TEST xong xóa
         private void btnDoXiNgau_Click(object sender, EventArgs e)
         {
 
@@ -164,22 +164,22 @@ namespace ludogame_v4.TheHien
             switch (currentTurn)
             {
                 case Colors.Green:
-                    //XN.DoXingau(TheHienXN, panelXN_Green);
+                    XN.DoXingau(TheHienXN, panelXN_Green);
                     panelXN_Green.Controls.Add(TheHienXN);
                     panelXN_Green.BringToFront();
                     break;
                 case Colors.Red:
-                    //XN.DoXingau(TheHienXN, panelXN_Red);
+                    XN.DoXingau(TheHienXN, panelXN_Red);
                     panelXN_Red.Controls.Add(TheHienXN);
                     panelXN_Red.BringToFront();
                     break;
                 case Colors.Yellow:
-                    //XN.DoXingau(TheHienXN, panelXN_Yellow);
+                    XN.DoXingau(TheHienXN, panelXN_Yellow);
                     panelXN_Yellow.Controls.Add(TheHienXN);
                     panelXN_Yellow.BringToFront();
                     break;
                 case Colors.Blue:
-                    //XN.DoXingau(TheHienXN, panelXN_Blue);
+                    XN.DoXingau(TheHienXN, panelXN_Blue);
                     panelXN_Blue.Controls.Add(TheHienXN);
                     panelXN_Blue.BringToFront();
                     break;
@@ -187,17 +187,17 @@ namespace ludogame_v4.TheHien
                     break;
             }
 
-            if (a == 0) // TEST xong xóa
-            {
-                XN.gt1 = 1;
-                a++;
+            //if (a == 0) // TEST xong xóa
+            //{
+            //    XN.gt1 = 1;
+            //    a++;
 
-            }
-            else
-            {
-                XN.gt1 = 6;
-                a--;
-            }
+            //}
+            //else
+            //{
+            //    XN.gt1 = 6;
+            //    a--;
+            //}
             BC.DLBC.CapNhatGTXN(XN);
 
             BC.XuLyBanCo();
