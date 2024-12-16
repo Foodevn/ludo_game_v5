@@ -105,11 +105,22 @@ namespace ludogame_v4.TheHien
 
         public TheHienQuanCo qc = new TheHienQuanCo();
 
+        private Image backgroundImage;
         public TuyChon()
         {
             InitializeComponent();
+            backgroundImage = new Bitmap(Application.StartupPath + "\\image\\14f9f7087b83339250e511a0f3c9a7b0.jpg");
+            this.DoubleBuffered = true; // Kích hoạt DoubleBuffering để giảm nhấp nháy
         }
 
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+            if (backgroundImage != null)
+            {
+                e.Graphics.DrawImage(backgroundImage, this.ClientRectangle);
+            }
+        }
 
 
         private void TuyChon_Load(object sender, EventArgs e)

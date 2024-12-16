@@ -41,7 +41,7 @@ namespace ludogame_v4.TheHien
         private Colors currentTurn;
         private BanCo BC;
 
-        private TuyChon TuyChonThamSo ;
+        private TuyChon TuyChonThamSo;
 
         private bool isAutoRunning = false;
 
@@ -51,12 +51,12 @@ namespace ludogame_v4.TheHien
         {
             TuyChonThamSo = tuyChonThamSo;
 
-			InitializeComponent();
+            InitializeComponent();
             TheHienXN.UserControlClicked += MyControl_UserControlClicked;
             //panelXN.Controls.Add(TheHienXN);
             TheHienXN.Size = new Size((int)(TheHienXN.Width * 2), (int)(TheHienXN.Height * 2));
-            TheHienXN.picXN1.Size = new Size((int)(TheHienXN.picXN1.Width * 1.5), (int)(TheHienXN.picXN1.Height * 1.5));
-            TheHienXN.picXN2.Size = new Size((int)(TheHienXN.picXN2.Width * 1.5), (int)(TheHienXN.picXN2.Height * 1.5));
+            TheHienXN.picXN1.Size = new Size((int)(TheHienXN.picXN1.Width * 3), (int)(TheHienXN.picXN1.Height * 3));
+            TheHienXN.picXN2.Size = new Size((int)(TheHienXN.picXN2.Width * 3), (int)(TheHienXN.picXN2.Height * 3));
 
         }
 
@@ -72,9 +72,9 @@ namespace ludogame_v4.TheHien
             XN.SoXN = TuyChonThamSo.tc.SoHotXiNgau;
             btnDoXiNgau.Enabled = false;
             SapBanCo();
-		   // CreateMenu();
+            // CreateMenu();
 
-		}
+        }
 
         public void LoadHinhBC()
         {
@@ -161,31 +161,33 @@ namespace ludogame_v4.TheHien
             //picLuotQC.Image = new Bitmap(GetStrImage());
             picLuotQC.Image = new Bitmap(new Bitmap(GetStrImage()), (int)(picLuotQC.Width * 0.7), (int)(picLuotQC.Width * 0.7));
             GetText();
-            switch (currentTurn)
-            {
-                case Colors.Green:
-                    XN.DoXingau(TheHienXN, panelXN_Green);
-                    panelXN_Green.Controls.Add(TheHienXN);
-                    panelXN_Green.BringToFront();
-                    break;
-                case Colors.Red:
-                    XN.DoXingau(TheHienXN, panelXN_Red);
-                    panelXN_Red.Controls.Add(TheHienXN);
-                    panelXN_Red.BringToFront();
-                    break;
-                case Colors.Yellow:
-                    XN.DoXingau(TheHienXN, panelXN_Yellow);
-                    panelXN_Yellow.Controls.Add(TheHienXN);
-                    panelXN_Yellow.BringToFront();
-                    break;
-                case Colors.Blue:
-                    XN.DoXingau(TheHienXN, panelXN_Blue);
-                    panelXN_Blue.Controls.Add(TheHienXN);
-                    panelXN_Blue.BringToFront();
-                    break;
-                default:
-                    break;
-            }
+            XN.DoXingau(TheHienXN);
+
+            //switch (currentTurn)
+            //{
+            //    case Colors.Green:
+            //        XN.DoXingau(TheHienXN);
+            //        panelXN_Green.Controls.Add(TheHienXN);
+            //        panelXN_Green.BringToFront();
+            //        break;
+            //    case Colors.Red:
+            //        XN.DoXingau(TheHienXN);
+            //        panelXN_Red.Controls.Add(TheHienXN);
+            //        panelXN_Red.BringToFront();
+            //        break;
+            //    case Colors.Yellow:
+            //        XN.DoXingau(TheHienXN);
+            //        panelXN_Yellow.Controls.Add(TheHienXN);
+            //        panelXN_Yellow.BringToFront();
+            //        break;
+            //    case Colors.Blue:
+            //        XN.DoXingau(TheHienXN);
+            //        panelXN_Blue.Controls.Add(TheHienXN);
+            //        panelXN_Blue.BringToFront();
+            //        break;
+            //    default:
+            //        break;
+            //}
 
             //if (a == 0) // TEST xong xóa
             //{
@@ -211,11 +213,13 @@ namespace ludogame_v4.TheHien
         void UserNext()
         {
             BC.DLBC.UserHienTai = BC.DLBC.UserHienTai % BC.DLBC.SoNguoichoi + 1;
+
+            picLuotQC.Image = new Bitmap(new Bitmap(GetStrImage()), (int)(picLuotQC.Width * 0.7), (int)(picLuotQC.Width * 0.7));
         }
 
 
 
-     
+
         private void btnThoat_Click(object sender, EventArgs e)
         {
 
@@ -229,10 +233,9 @@ namespace ludogame_v4.TheHien
             ResetManHinh();
             BC.SapBanCo(panelBC, TuyChonThamSo.tc);
             panelXN.BringToFront();
-            panelXN.BringToFront();
-            panelXN.BringToFront();
+
             Data.CreateBanSql();
-           
+
             btnDoXiNgau.Enabled = true;
             TatHanAuto();
             isAutoRunning = TuyChonThamSo.KiemTraChoiVoiMay();
@@ -298,8 +301,9 @@ namespace ludogame_v4.TheHien
             menu = new Panel();
             menu.Dock = DockStyle.Fill;
             this.Controls.Add(menu);
-            
+
             pageHome.TopLevel = false;
+            pageHome.Dock = DockStyle.Fill;
             menu.Controls.Add(pageHome);
             pageHome.Show();
             menu.BringToFront();
@@ -310,7 +314,7 @@ namespace ludogame_v4.TheHien
         private void PageHome_OnClose(object sender, EventArgs e)
         {
             Clear_pnl();
-        } 
+        }
 
         void Clear_pnl()
         {
@@ -321,8 +325,6 @@ namespace ludogame_v4.TheHien
                 menu = null;
             }
         }
-
-		
-	}
+    }
 }
 

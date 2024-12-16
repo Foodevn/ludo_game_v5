@@ -16,7 +16,7 @@ namespace ludogame_v4.XuLy
 
 		public int SoXN;
 
-		public void DoXingau(TheHienXiNgau XN,Panel panel)
+		public void DoXingau(TheHienXiNgau XN)
 		{
 			SoXN = XN.SoXiNgauTheHien;
 			Random rd = new Random(DateTime.Now.Millisecond);

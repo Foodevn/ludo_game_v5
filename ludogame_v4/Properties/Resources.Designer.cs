@@ -63,6 +63,16 @@ namespace ludogame_v4.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _14f9f7087b83339250e511a0f3c9a7b0 {
+            get {
+                object obj = ResourceManager.GetObject("14f9f7087b83339250e511a0f3c9a7b0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BANCO1 {
             get {
                 object obj = ResourceManager.GetObject("BANCO1", resourceCulture);

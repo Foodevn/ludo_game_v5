@@ -26,7 +26,8 @@ namespace ludogame_v4.TheHien
 			Lui = 0;
 			InitializeComponent();
 		}
-		private void OpenChildForm(Form childForm)
+       
+        private void OpenChildForm(Form childForm)
 		{
 			childForm.TopLevel = false;
 			childForm.FormBorderStyle = FormBorderStyle.None;
@@ -45,10 +46,9 @@ namespace ludogame_v4.TheHien
 		}
 		void PageFormClosed(object sender, EventArgs e)
 		{
-			
 			switch (Lui)
 			{
-				
+
 				case 0:
 					TheHien.TuyChon tuyChon = new TheHien.TuyChon();
 					OpenChildForm(tuyChon);
@@ -62,7 +62,7 @@ namespace ludogame_v4.TheHien
 					OpenChildForm(bangXepHang);
 					bangXepHang.FormClosed += new FormClosedEventHandler(FormTuyChonClored);
 					break;
-			}	
+			}
 		}
 		void FormTuyChonClored(object sender, EventArgs e)
 		{
