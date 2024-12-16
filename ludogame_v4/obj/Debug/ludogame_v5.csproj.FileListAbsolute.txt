@@ -132,3 +132,4 @@ D:\ludo_game_v5\ludogame_v4\obj\Debug\ludogame_v5.csproj.GenerateResource.cache
 D:\ludo_game_v5\ludogame_v4\obj\Debug\ludogame_v5.csproj.CoreCompileInputs.cache
 D:\ludo_game_v5\ludogame_v4\obj\Debug\ludogame_v4.exe
 D:\ludo_game_v5\ludogame_v4\obj\Debug\ludogame_v4.pdb
+D:\git\ludo_game_v5\ludogame_v4\obj\Debug\ludogame_v4.TheHien.Rules.resources

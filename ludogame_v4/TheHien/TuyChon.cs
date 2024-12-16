@@ -15,7 +15,7 @@ namespace ludogame_v4.TheHien
     public partial class TuyChon : Form
     {
 
-        private GroupBox groupBox1;
+        private GroupBox groupBoxChonxiNgau;
 
         private Button btnApDung;
 
@@ -105,27 +105,18 @@ namespace ludogame_v4.TheHien
 
         public TheHienQuanCo qc = new TheHienQuanCo();
 
-        private Image backgroundImage;
         public TuyChon()
         {
             InitializeComponent();
-            backgroundImage = new Bitmap(Application.StartupPath + "\\image\\14f9f7087b83339250e511a0f3c9a7b0.jpg");
-            this.DoubleBuffered = true; // Kích hoạt DoubleBuffering để giảm nhấp nháy
         }
 
-        protected override void OnPaint(PaintEventArgs e)
-        {
-            base.OnPaint(e);
-            if (backgroundImage != null)
-            {
-                e.Graphics.DrawImage(backgroundImage, this.ClientRectangle);
-            }
-        }
 
 
         private void TuyChon_Load(object sender, EventArgs e)
         {
-            RemoveItemsControls();
+			groupBoxChonxiNgau.Visible = false;
+
+			RemoveItemsControls();
             theHienXN.LoadImageXiNgau1(Application.StartupPath + "/HinhXiNgau/1.jpg");
             theHienXN.LoadImageXiNgau2(Application.StartupPath + "/HinhXiNgau/6.jpg");
             this.panel1.Controls.Add(theHienXN);
