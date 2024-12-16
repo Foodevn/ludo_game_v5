@@ -21,12 +21,20 @@ namespace ludogame_v4.login
 
 		private void btnStart_Click(object sender, EventArgs e)
 		{
-            this.Close();
+			TheHien.Menu.Lui = 0;
+			this.Close();
 		}
 
 		private void btnChampion_Click(object sender, EventArgs e)
 		{
 			TheHien.Menu.Lui = 3;
+			this.Close();
+		}
+
+		private void btnRules_Click(object sender, EventArgs e)
+		{
+
+			TheHien.Menu.Lui = 2;
 			this.Close();
 		}
 	}

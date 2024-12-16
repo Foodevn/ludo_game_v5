@@ -29,8 +29,6 @@ namespace ludogame_v4.TheHien
 
         private Button btnDoXiNgau;
 
-        private Button btnSapBanCo;
-
         private Label label1;
 
         private PictureBox picLuotQC;
@@ -39,21 +37,21 @@ namespace ludogame_v4.TheHien
 
         private XiNgau XN = new XiNgau();
 
-        private Button btnTuyChon;
-
         private Button btnThoat;
         private Colors currentTurn;
         private BanCo BC;
 
-        private TuyChon TuyChonThamSo = new TuyChon();
+        private TuyChon TuyChonThamSo ;
 
         private bool isAutoRunning = false;
 
         LuuDuLieuSql Data = new LuuDuLieuSql();
 
-        public FormXuLyChinh()
+        public FormXuLyChinh(TuyChon tuyChonThamSo)
         {
-            InitializeComponent();
+            TuyChonThamSo = tuyChonThamSo;
+
+			InitializeComponent();
             TheHienXN.UserControlClicked += MyControl_UserControlClicked;
             //panelXN.Controls.Add(TheHienXN);
             TheHienXN.Size = new Size((int)(TheHienXN.Width * 1.5), (int)(TheHienXN.Height * 1.5));
@@ -73,9 +71,10 @@ namespace ludogame_v4.TheHien
             //LoadHinhBC();
             XN.SoXN = TuyChonThamSo.tc.SoHotXiNgau;
             btnDoXiNgau.Enabled = false;
-           // CreateMenu();
+            SapBanCo();
+		   // CreateMenu();
 
-        }
+		}
 
         public void LoadHinhBC()
         {
@@ -215,12 +214,7 @@ namespace ludogame_v4.TheHien
 
 
 
-        private void btnTuyChon_Click(object sender, EventArgs e)
-        {
-            TuyChonThamSo.ShowDialog(this);
-            btnSapBanCo.Enabled = true;
-        }
-
+     
         private void btnThoat_Click(object sender, EventArgs e)
         {
 
@@ -228,7 +222,7 @@ namespace ludogame_v4.TheHien
         }
 
 
-        private void btnSapBanCo_Click(object sender, EventArgs e)
+        private void SapBanCo()
         {
             panelXN.Controls.Add(TheHienXN);
             ResetManHinh();
@@ -237,7 +231,7 @@ namespace ludogame_v4.TheHien
             panelXN.BringToFront();
             panelXN.BringToFront();
             Data.CreateBanSql();
-            btnSapBanCo.Enabled = false;
+           
             btnDoXiNgau.Enabled = true;
             TatHanAuto();
             isAutoRunning = TuyChonThamSo.KiemTraChoiVoiMay();

@@ -50,7 +50,7 @@ namespace ludogame_v4.TheHien
 					this.Hide();
 
 					// Tạo FormXuLyChinh và chạy nó như Form chính mới
-					FormXuLyChinh form = new FormXuLyChinh();
+					FormXuLyChinh form = new FormXuLyChinh(new TheHien.TuyChon());
 					form.ShowDialog();
 
 					// Đóng Form1 sau khi FormXuLyChinh được đóng

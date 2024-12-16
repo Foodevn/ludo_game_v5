@@ -36,9 +36,7 @@
 			this.panelXN_Yellow = new System.Windows.Forms.Panel();
 			this.panelXN = new System.Windows.Forms.Panel();
 			this.btnDoXiNgau = new System.Windows.Forms.Button();
-			this.btnSapBanCo = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
-			this.btnTuyChon = new System.Windows.Forms.Button();
 			this.btnThoat = new System.Windows.Forms.Button();
 			this.btnRank = new System.Windows.Forms.Button();
 			this.lbTextNameUser = new System.Windows.Forms.Label();
@@ -143,17 +141,6 @@
 			this.btnDoXiNgau.UseVisualStyleBackColor = false;
 			this.btnDoXiNgau.Click += new System.EventHandler(this.btnDoXiNgau_Click);
 			// 
-			// btnSapBanCo
-			// 
-			this.btnSapBanCo.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.btnSapBanCo.Location = new System.Drawing.Point(1097, 322);
-			this.btnSapBanCo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-			this.btnSapBanCo.Name = "btnSapBanCo";
-			this.btnSapBanCo.Size = new System.Drawing.Size(91, 26);
-			this.btnSapBanCo.TabIndex = 4;
-			this.btnSapBanCo.Text = "Sắp bàn Cờ";
-			this.btnSapBanCo.Click += new System.EventHandler(this.btnSapBanCo_Click);
-			// 
 			// label1
 			// 
 			this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -165,17 +152,6 @@
 			this.label1.TabIndex = 6;
 			this.label1.Text = "Lượt đi:";
 			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// btnTuyChon
-			// 
-			this.btnTuyChon.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.btnTuyChon.Location = new System.Drawing.Point(1097, 350);
-			this.btnTuyChon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-			this.btnTuyChon.Name = "btnTuyChon";
-			this.btnTuyChon.Size = new System.Drawing.Size(91, 26);
-			this.btnTuyChon.TabIndex = 9;
-			this.btnTuyChon.Text = "Tùy Chọn";
-			this.btnTuyChon.Click += new System.EventHandler(this.btnTuyChon_Click);
 			// 
 			// btnThoat
 			// 
@@ -215,7 +191,7 @@
 			// 
 			this.picLuotQC.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.picLuotQC.BackColor = System.Drawing.Color.Transparent;
-			this.picLuotQC.Location = new System.Drawing.Point(1097, 108);
+			this.picLuotQC.Location = new System.Drawing.Point(1086, 108);
 			this.picLuotQC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.picLuotQC.Name = "picLuotQC";
 			this.picLuotQC.Size = new System.Drawing.Size(29, 27);
@@ -230,10 +206,8 @@
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(1340, 755);
 			this.Controls.Add(this.btnThoat);
-			this.Controls.Add(this.btnTuyChon);
 			this.Controls.Add(this.lbTextNameUser);
 			this.Controls.Add(this.label1);
-			this.Controls.Add(this.btnSapBanCo);
 			this.Controls.Add(this.btnRank);
 			this.Controls.Add(this.btnDoXiNgau);
 			this.Controls.Add(this.panelBC);

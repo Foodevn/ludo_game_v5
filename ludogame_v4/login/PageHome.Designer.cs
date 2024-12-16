@@ -123,6 +123,7 @@
 			this.btnRules.TabIndex = 2;
 			this.btnRules.Text = "Rules";
 			this.btnRules.UseVisualStyleBackColor = false;
+			this.btnRules.Click += new System.EventHandler(this.btnRules_Click);
 			// 
 			// PageHome
 			// 

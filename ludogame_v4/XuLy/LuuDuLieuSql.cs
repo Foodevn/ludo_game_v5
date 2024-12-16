@@ -15,7 +15,7 @@ namespace ludogame_v4.XuLy
         {
             try
             {
-                string connectionString = "server=.; database=ChartScore; Integrated Security=true;";
+                string connectionString = "server=.; database=LudoGame; Integrated Security=true;";
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     conn.Open();
@@ -87,7 +87,7 @@ namespace ludogame_v4.XuLy
         {
             try
             {
-                string connectionString = "server=.; database = ChartScore; Integrated Security = true; ";
+                string connectionString = "server=.; database = LudoGame; Integrated Security = true; ";
                 SqlConnection conn = new SqlConnection(connectionString);
 
                 conn.Open();

@@ -20,12 +20,12 @@ namespace ludogame_v4.TheHien
 		 2 = mo form rule
 		3 = champion
 		*/
+		TheHien.TuyChon TuyChon;
 		public Menu()
 		{
 			Lui = 0;
 			InitializeComponent();
 		}
-
 		private void OpenChildForm(Form childForm)
 		{
 			childForm.TopLevel = false;
@@ -45,17 +45,20 @@ namespace ludogame_v4.TheHien
 		}
 		void PageFormClosed(object sender, EventArgs e)
 		{
-			switch(Lui)
+			
+			switch (Lui)
 			{
-
+				
 				case 0:
-				case 1:
 					TheHien.TuyChon tuyChon = new TheHien.TuyChon();
 					OpenChildForm(tuyChon);
+					this.TuyChon = tuyChon;
 					tuyChon.FormClosed += new FormClosedEventHandler(FormTuyChonClored);
 					break;
+				case 2:
+					break;
 				case 3:
-					TheHien.BangXepHang bangXepHang=new BangXepHang();
+					TheHien.BangXepHang bangXepHang = new BangXepHang();
 					OpenChildForm(bangXepHang);
 					bangXepHang.FormClosed += new FormClosedEventHandler(FormTuyChonClored);
 					break;
@@ -68,11 +71,13 @@ namespace ludogame_v4.TheHien
 				login.PageHome pageHome = new login.PageHome();
 				OpenChildForm(pageHome);
 				pageHome.FormClosed += new FormClosedEventHandler(PageFormClosed);
+				Lui = 0;
 				return;
 			}
-			TheHien.FormXuLyChinh formXuLyChinh = new TheHien.FormXuLyChinh();
+			TheHien.FormXuLyChinh formXuLyChinh = new TheHien.FormXuLyChinh(TuyChon);
 			OpenChildForm(formXuLyChinh);
 			formXuLyChinh.FormClosed += new FormClosedEventHandler(FormXuLyClosed);
+
 		}
 		void FormXuLyClosed(object sender, FormClosedEventArgs e)
 		{
