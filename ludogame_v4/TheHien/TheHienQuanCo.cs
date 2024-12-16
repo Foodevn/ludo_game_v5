@@ -132,8 +132,8 @@ namespace ludogame_v4.TheHien
             Bitmap originalImage = new Bitmap(imagePath);
 
             // Tạo ảnh mới với kích thước mong muốn
-            int newWidth = (int)(originalImage.Width *1.3) ;  // Phóng to gấp đôi
-            int newHeight = (int)(originalImage.Height * 1.3) ;
+            int newWidth = (int)(originalImage.Width *2) ;  // Phóng to gấp đôi
+            int newHeight = (int)(originalImage.Height * 2) ;
             Bitmap resizedImage = new Bitmap(originalImage, newWidth, newHeight);
 
             picQC.Image = resizedImage;

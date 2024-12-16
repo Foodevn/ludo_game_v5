@@ -50,8 +50,8 @@ namespace ludogame_v4.XuLy
 
         public void TaoViTriQuan(Point vtCB, int i, DuLieuUser User, Panel panel)
         {
-            int num = -40;
-            int num2 = -40;
+            int num = -60;
+            int num2 = -60;
             if (i == 1)
             {
                 num2 = -num2;
@@ -170,12 +170,12 @@ namespace ludogame_v4.XuLy
         public Point LayVT(int vtTrenBC)
         {
             Point result = new Point(224, 220);
-            result.X = (int)(result.X * 1.2805);
-            result.Y = (int)(result.Y * 1.2805);
+            result.X = (int)(result.X * 1.9);
+            result.Y = (int)(result.Y * 1.95);
 
             int num = 0;
             int num2 = 0;
-            int num3 = 36; // Khoảng cách giữa hai ô cờ liên tiếp (theo pixel)
+            int num3 = 56; // Khoảng cách giữa hai ô cờ liên tiếp (theo pixel)
             if (vtTrenBC == 55)
             {
                 num2 = 7 * num3;

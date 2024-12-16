@@ -38,7 +38,7 @@
             this.picQC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picQC.Location = new System.Drawing.Point(8, 8);
             this.picQC.Name = "picQC";
-            this.picQC.Size = new System.Drawing.Size(40, 40);
+            this.picQC.Size = new System.Drawing.Size(54, 56);
             this.picQC.TabIndex = 0;
             this.picQC.TabStop = false;
             this.picQC.Click += new System.EventHandler(this.picQC_Click);
@@ -46,11 +46,11 @@
             // TheHienQuanCo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.picQC);
             this.Name = "TheHienQuanCo";
-            this.Size = new System.Drawing.Size(100, 100);
+            this.Size = new System.Drawing.Size(106, 103);
             ((System.ComponentModel.ISupportInitialize)(this.picQC)).EndInit();
             this.ResumeLayout(false);
 

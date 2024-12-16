@@ -120,11 +120,11 @@ namespace ludogame_v4.DuLieu
 
         public void KhoiTaoMangVeDich(int iUser, DuLieuUser User)
         {
-            int num = 33;  // Khoảng cách giữa các ô
+            int num = 48;  // Khoảng cách giữa các ô
             int num2 = 6; // Số ô về đích không đổi
             if (iUser == 0)
             {
-                Point point = new Point((int)(224 * 1.2805), (int)(388 * 1.25));
+                Point point = new Point((int)(224 * 1.9), (int)(388 * 1.85));
                 for (int i = 0; i < num2; i++)
                 {
                     int y = point.Y + -num * i;
@@ -134,7 +134,7 @@ namespace ludogame_v4.DuLieu
             }
             if (iUser == 1)
             {
-                Point point = new Point((int)(395 * 1.25), (int)(222 * 1.2805));
+                Point point = new Point((int)(395 * 1.85), (int)(222 * 1.95));
                 for (int i = 0; i < num2; i++)
                 {
                     int y = point.X + -num * i;
@@ -144,7 +144,7 @@ namespace ludogame_v4.DuLieu
             }
             if (iUser == 2)
             {
-                Point point = new Point((int)(224 * 1.2805), (int)(50 * 1.31));
+                Point point = new Point((int)(224 * 1.9), (int)(50 * 2.5));
                 for (int i = 0; i < num2; i++)
                 {
                     int y = point.Y + num * i;
@@ -154,7 +154,7 @@ namespace ludogame_v4.DuLieu
             }
             if (iUser == 3)
             {
-                Point point = new Point((int)(58 * 1.31), (int)(222 * 1.2805));
+                Point point = new Point((int)(58 * 2.3), (int)(222 * 1.95));
                 for (int i = 0; i < num2; i++)
                 {
                     int y = point.X + num * i;
@@ -167,16 +167,16 @@ namespace ludogame_v4.DuLieu
         public void KhoiTaoMangChuong()
         {
             //Blue
-            Point point = new Point(423 + 120, 406 + 110);
+            Point point = new Point(810, 790);
             arrVTChuong.Add(point);
             //Red
-            point = new Point(420 +120 , 38);
+            point = new Point(805, 70);
             arrVTChuong.Add(point);
             //Yellow
-            point = new Point(30, 38);
+            point = new Point(53, 70);
             arrVTChuong.Add(point);
             //Green
-            point = new Point(30, 406 + 110);
+            point = new Point(53, 790);
             arrVTChuong.Add(point);
         }
 
