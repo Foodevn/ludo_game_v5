@@ -47,12 +47,14 @@ namespace ludogame_v4.TheHien
 		{
 			switch(Lui)
 			{
+
 				case 0:
+				case 1:
 					TheHien.TuyChon tuyChon = new TheHien.TuyChon();
 					OpenChildForm(tuyChon);
 					tuyChon.FormClosed += new FormClosedEventHandler(FormTuyChonClored);
 					break;
-					case 3:
+				case 3:
 					TheHien.BangXepHang bangXepHang=new BangXepHang();
 					OpenChildForm(bangXepHang);
 					bangXepHang.FormClosed += new FormClosedEventHandler(FormTuyChonClored);

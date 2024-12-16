@@ -55,7 +55,6 @@
 			this.Name = "BangXepHang";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Bảng Xếp Hạng";
-			this.TransparencyKey = System.Drawing.Color.Transparent;
 			this.Load += new System.EventHandler(this.BangXepHang_Load);
 			this.ResumeLayout(false);
 

@@ -50,7 +50,6 @@
 			this.MinimumSize = new System.Drawing.Size(1340, 760);
 			this.Name = "Menu";
 			this.Text = "Menu";
-			this.TransparencyKey = System.Drawing.Color.WhiteSmoke;
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.Load += new System.EventHandler(this.Menu_Load);
 			this.ResumeLayout(false);
