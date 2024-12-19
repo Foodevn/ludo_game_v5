@@ -185,21 +185,30 @@ namespace ludogame_v4.DuLieu
             for (int i = 0; i < SoNguoichoi; i++)
             {
                 DuLieuUser duLieuUser = new DuLieuUser(SoQN[i]);
+                duLieuUser.RollClick += DuLieuUser_RollClick;
                 KhoiTaoMangVeDich(i, duLieuUser);
                 arrUsers.Add(duLieuUser);
             }
             KhoiTaoMangChuong();
         }
+     
 
         public void KhoiTao()
         {
             for (int i = 0; i < SoNguoichoi; i++)
             {
                 DuLieuUser duLieuUser = new DuLieuUser(4);
+                duLieuUser.RollClick += DuLieuUser_RollClick;
                 KhoiTaoMangVeDich(i, duLieuUser);
                 arrUsers.Add(duLieuUser);
             }
             KhoiTaoMangChuong();
+        }
+
+        public event EventHandler RollCLick; 
+        private void DuLieuUser_RollClick(object sender, EventArgs e)
+        {
+            RollCLick.Invoke(this, e);
         }
 
         public void CapNhatDL(DuLieuTuyChon tc)

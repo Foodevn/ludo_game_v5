@@ -1,4 +1,5 @@
 ﻿using ludogame_v4.DuLieu;
+using ludogame_v4.TheHien;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -40,9 +41,9 @@ namespace ludogame_v4.XuLy
             int count = panel.Controls.Count;
             for (int num = count - 1; num >= 0; num--)
             {
-                if (panel.Controls[num].Name != "panelXN_Red" && panel.Controls[num].Name != "panelXN_Blue"&&
+                if (panel.Controls[num].Name != "panelXN_Red" && panel.Controls[num].Name != "panelXN_Blue" &&
 
-					panel.Controls[num].Name != "panelXN_Yellow"&& panel.Controls[num].Name != "panelXN_Green"
+                    panel.Controls[num].Name != "panelXN_Yellow" && panel.Controls[num].Name != "panelXN_Green"
                     && panel.Controls[num].Name != "panelXN")
                     panel.Controls.RemoveAt(num);
             }
@@ -93,6 +94,7 @@ namespace ludogame_v4.XuLy
             {
                 QuanCo quanCo = (QuanCo)User.arrQC[i];
                 quanCo.QCTH.picQC_Click(quanCo.QCTH.picQC, EventArgs.Empty);
+               
             }
         }
 
@@ -134,20 +136,55 @@ namespace ludogame_v4.XuLy
                 quanCo.QCTH.User = duLieuUser;
                 quanCo.QCTH.TrangThaiClick = true;
             }
-			for (int i = 0; i < DLBC.arrUsers.Count; i++)
-			{
-				if (i != (userHienTai - 1))
-				{
-					duLieuUser = (DuLieuUser)DLBC.arrUsers[i];
-					for (int j = 0; j < duLieuUser.SoQuanCo; j++)
-					{
-						QuanCo quanCo = (QuanCo)duLieuUser.arrQC[j];
+            for (int i = 0; i < DLBC.arrUsers.Count; i++)
+            {
+                if (i != (userHienTai - 1))
+                {
+                    duLieuUser = (DuLieuUser)DLBC.arrUsers[i];
+                    for (int j = 0; j < duLieuUser.SoQuanCo; j++)
+                    {
+                        QuanCo quanCo = (QuanCo)duLieuUser.arrQC[j];
 
-						quanCo.QCTH.TrangThaiClick = false;
-					}
-				}
-			}
-		}
+                        quanCo.QCTH.TrangThaiClick = false;
+                    }
+                }
+            }
+        }
+        //int ch;
+        //public int XuLyCoHoi(int CoHoi, TuyChon tc)
+        //{
+        //    int ch = CoHoi;
+        //    int userHienTai = DLBC.UserHienTai;
+        //    DuLieuUser duLieuUser = (DuLieuUser)DLBC.arrUsers[userHienTai - 1];
+        //    for (int i = 0; i < duLieuUser.SoQuanCo; i++)
+        //    {
+        //        if (KiemTraNguoiChoiDiDc())
+        //        {
+        //            ch = 0;
+        //            break;
+        //        }
+        //        if (!KiemTraNguoiChoiDiDc() && DemSoQuanTrongChuong() == tc.tc.SoNguaQuan[i] && ch != 0)
+        //        {
+        //            ch--;
+        //        }
+        //    }
+        //    return ch;
+        //}
+
+        ////Đếm tra số ngựa trong chuồng
+        //public int DemSoQuanTrongChuong()
+        //{
+        //    int SoQuan = 0;
+        //    int userHienTai = DLBC.UserHienTai;
+        //    DuLieuUser duLieuUser = (DuLieuUser)DLBC.arrUsers[userHienTai - 1];
+        //    for (int i = 0; i < duLieuUser.SoQuanCo; i++)
+        //    {
+        //        QuanCo quanCo = (QuanCo)duLieuUser.arrQC[i];
+        //        quanCo.QCTH.picQC.Location = quanCo.QCDL.ViTriTrongChuong;
+        //        SoQuan++;
+        //    }
+        //    return SoQuan;
+        //}
 
         // Kiểm tra người chơi còn nước đi không
         public bool KiemTraNguoiChoiDiDc()

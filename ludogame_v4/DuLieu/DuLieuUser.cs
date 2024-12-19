@@ -59,6 +59,7 @@ namespace ludogame_v4.DuLieu
 			}
 		}
 
+
 		public DuLieuUser()
 		{
 			SoQuanCo = 4;
@@ -77,8 +78,14 @@ namespace ludogame_v4.DuLieu
 			for (int i = 0; i < SoQuanCo; i++)
 			{
 				QuanCo value = new QuanCo();
+                value.QCTH.RollClick += QCTH_RollClick;
 				arrQC.Add(value);
 			}
 		}
-	}
+		public event EventHandler RollClick;
+        private void QCTH_RollClick(object sender, EventArgs e)
+        {
+            RollClick.Invoke(this, e);
+        }
+    }
 }

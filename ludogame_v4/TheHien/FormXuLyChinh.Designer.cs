@@ -33,16 +33,19 @@
             this.panelXN_Red = new System.Windows.Forms.Panel();
             this.panelXN_Green = new System.Windows.Forms.Panel();
             this.panelXN_Yellow = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelXN = new System.Windows.Forms.Panel();
             this.btnDoXiNgau = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnThoat = new System.Windows.Forms.Button();
             this.lbTextNameUser = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lbComments = new System.Windows.Forms.Label();
+            this.btnNext = new System.Windows.Forms.Button();
             this.picLuotQC = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panelBC.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLuotQC)).BeginInit();
@@ -66,39 +69,53 @@
             // panelXN_Blue
             // 
             this.panelXN_Blue.BackColor = System.Drawing.Color.Transparent;
-            this.panelXN_Blue.Location = new System.Drawing.Point(584, 578);
+            this.panelXN_Blue.Location = new System.Drawing.Point(598, 578);
             this.panelXN_Blue.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelXN_Blue.Name = "panelXN_Blue";
-            this.panelXN_Blue.Size = new System.Drawing.Size(170, 91);
+            this.panelXN_Blue.Size = new System.Drawing.Size(70, 70);
             this.panelXN_Blue.TabIndex = 2;
             // 
             // panelXN_Red
             // 
             this.panelXN_Red.BackColor = System.Drawing.Color.Transparent;
-            this.panelXN_Red.Location = new System.Drawing.Point(597, 235);
+            this.panelXN_Red.Location = new System.Drawing.Point(598, 251);
             this.panelXN_Red.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelXN_Red.Name = "panelXN_Red";
-            this.panelXN_Red.Size = new System.Drawing.Size(170, 86);
+            this.panelXN_Red.Size = new System.Drawing.Size(70, 70);
             this.panelXN_Red.TabIndex = 1;
             // 
             // panelXN_Green
             // 
             this.panelXN_Green.BackColor = System.Drawing.Color.Transparent;
-            this.panelXN_Green.Location = new System.Drawing.Point(163, 578);
+            this.panelXN_Green.Location = new System.Drawing.Point(248, 578);
             this.panelXN_Green.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelXN_Green.Name = "panelXN_Green";
-            this.panelXN_Green.Size = new System.Drawing.Size(155, 91);
+            this.panelXN_Green.Size = new System.Drawing.Size(70, 70);
             this.panelXN_Green.TabIndex = 1;
             // 
             // panelXN_Yellow
             // 
             this.panelXN_Yellow.BackColor = System.Drawing.Color.Transparent;
             this.panelXN_Yellow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelXN_Yellow.Location = new System.Drawing.Point(165, 235);
+            this.panelXN_Yellow.Location = new System.Drawing.Point(248, 251);
             this.panelXN_Yellow.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelXN_Yellow.Name = "panelXN_Yellow";
-            this.panelXN_Yellow.Size = new System.Drawing.Size(155, 86);
+            this.panelXN_Yellow.Size = new System.Drawing.Size(70, 70);
             this.panelXN_Yellow.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.pictureBox1.BackgroundImage = global::ludogame_v4.Properties.Resources.BANCO1;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(911, 910);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // panelXN
             // 
@@ -179,50 +196,35 @@
             this.label2.Text = "Kết quả:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
+            // lbComments
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(1147, 596);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 46);
-            this.label3.TabIndex = 6;
-            this.label3.Text = ".";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbComments.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbComments.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbComments.ForeColor = System.Drawing.Color.Black;
+            this.lbComments.Location = new System.Drawing.Point(1149, 620);
+            this.lbComments.Name = "lbComments";
+            this.lbComments.Size = new System.Drawing.Size(313, 46);
+            this.lbComments.TabIndex = 6;
+            this.lbComments.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // btnNext
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Enabled = false;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(169)))), ((int)(((byte)(143)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(241)))), ((int)(((byte)(223)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(1180, 732);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(243, 70);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Next";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.pictureBox1.BackgroundImage = global::ludogame_v4.Properties.Resources.BANCO1;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(911, 910);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.btnNext.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnNext.BackColor = System.Drawing.Color.Transparent;
+            this.btnNext.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(169)))), ((int)(((byte)(143)))));
+            this.btnNext.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(241)))), ((int)(((byte)(223)))));
+            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnNext.Location = new System.Drawing.Point(1180, 773);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(243, 70);
+            this.btnNext.TabIndex = 1;
+            this.btnNext.Text = "Next";
+            this.btnNext.UseVisualStyleBackColor = false;
+            this.btnNext.Visible = false;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // picLuotQC
             // 
@@ -235,25 +237,56 @@
             this.picLuotQC.TabIndex = 7;
             this.picLuotQC.TabStop = false;
             // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label5.Location = new System.Drawing.Point(1153, 707);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(309, 10);
+            this.label5.TabIndex = 12;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(1161, 608);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(0, 58);
+            this.label6.TabIndex = 6;
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.Location = new System.Drawing.Point(1153, 570);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(309, 10);
+            this.label4.TabIndex = 12;
+            // 
             // FormXuLyChinh
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1508, 944);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lbComments);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panelXN);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.lbTextNameUser);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnDoXiNgau);
             this.Controls.Add(this.panelBC);
             this.Controls.Add(this.picLuotQC);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "FormXuLyChinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Trò chơi: cờ cá ngựa";
@@ -276,7 +309,10 @@
 		private System.Windows.Forms.Panel panelXN_Yellow;
         private System.Windows.Forms.Label lbTextNameUser;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lbComments;
+        private System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label4;
     }
 }
