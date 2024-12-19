@@ -94,7 +94,7 @@ namespace ludogame_v4.XuLy
             {
                 QuanCo quanCo = (QuanCo)User.arrQC[i];
                 quanCo.QCTH.picQC_Click(quanCo.QCTH.picQC, EventArgs.Empty);
-               
+
             }
         }
 
@@ -150,41 +150,26 @@ namespace ludogame_v4.XuLy
                 }
             }
         }
-        //int ch;
-        //public int XuLyCoHoi(int CoHoi, TuyChon tc)
-        //{
-        //    int ch = CoHoi;
-        //    int userHienTai = DLBC.UserHienTai;
-        //    DuLieuUser duLieuUser = (DuLieuUser)DLBC.arrUsers[userHienTai - 1];
-        //    for (int i = 0; i < duLieuUser.SoQuanCo; i++)
-        //    {
-        //        if (KiemTraNguoiChoiDiDc())
-        //        {
-        //            ch = 0;
-        //            break;
-        //        }
-        //        if (!KiemTraNguoiChoiDiDc() && DemSoQuanTrongChuong() == tc.tc.SoNguaQuan[i] && ch != 0)
-        //        {
-        //            ch--;
-        //        }
-        //    }
-        //    return ch;
-        //}
+        public int CoHoi;
 
-        ////Đếm tra số ngựa trong chuồng
-        //public int DemSoQuanTrongChuong()
-        //{
-        //    int SoQuan = 0;
-        //    int userHienTai = DLBC.UserHienTai;
-        //    DuLieuUser duLieuUser = (DuLieuUser)DLBC.arrUsers[userHienTai - 1];
-        //    for (int i = 0; i < duLieuUser.SoQuanCo; i++)
-        //    {
-        //        QuanCo quanCo = (QuanCo)duLieuUser.arrQC[i];
-        //        quanCo.QCTH.picQC.Location = quanCo.QCDL.ViTriTrongChuong;
-        //        SoQuan++;
-        //    }
-        //    return SoQuan;
-        //}
+        //Đếm tra số ngựa trong chuồng
+        public int KiemTraCoHoi()
+        {
+            int SoQuan = 0;
+            int userHienTai = DLBC.UserHienTai;
+            DuLieuUser duLieuUser = (DuLieuUser)DLBC.arrUsers[userHienTai - 1];
+            for (int i = 0; i < duLieuUser.SoQuanCo; i++)
+            {
+                QuanCo quanCo = (QuanCo)duLieuUser.arrQC[i];
+                if (quanCo.QCTH.picQC.Location == quanCo.QCDL.ViTriTrongChuong)
+                    SoQuan++;
+            }
+            if (SoQuan == duLieuUser.SoQuanCo)
+            {
+                return 1;
+            }
+            return 0;
+        }
 
         // Kiểm tra người chơi còn nước đi không
         public bool KiemTraNguoiChoiDiDc()

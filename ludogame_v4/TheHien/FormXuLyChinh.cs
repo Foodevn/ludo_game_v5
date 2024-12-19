@@ -133,20 +133,6 @@ namespace ludogame_v4.TheHien
             }
         }
 
-        public void GetComments()
-        {
-            //label4.Visible = true;
-            //label5.Visible = true;
-            if (BC.KiemTraNguoiChoiDiDc())
-                lbComments.Text = "Di chuyển";
-            else
-                lbComments.Text = "Hết lượt";
-
-            //if (true)
-            //    lbComments.Text = "Ném lại";
-
-        }
-
         public void ResetManHinh()
         {
             panelBC.BackgroundImage = new Bitmap(TuyChonThamSo.tc.HinhBanCo);
@@ -183,14 +169,25 @@ namespace ludogame_v4.TheHien
             XN.DoXingau(TheHienXN);
             ViTriNguoiChoi();
             BC.DLBC.CapNhatGTXN(XN);
-
             BC.XuLyBanCo();
 
             btnDoXiNgau.Enabled = false;
-           
-            GetComments();
+
+            if (BC.KiemTraCoHoi() == 1 && BC.CoHoi != 0)
+            {
+                BC.CoHoi--;
+                btnDoXiNgau.Enabled = true;
+                lbComments.Text = "Ném lại còn: " + BC.CoHoi;
+            }
+
+            if (BC.KiemTraNguoiChoiDiDc())
+            {
+                BC.CoHoi = 0;
+                btnDoXiNgau.Enabled = false;
+                lbComments.Text = "Di chuyển";
+            }
             BC.DLBC.RollCLick += DLBC_RollCLick;
-            if (BC.KiemTraNguoiChoiDiDc() == false) // Có đi dc không, nếu không thì chuyển User tiếp thep
+            if (BC.KiemTraNguoiChoiDiDc() == false && BC.CoHoi == 0) // Có đi dc không, nếu không thì chuyển User tiếp thep
             {
                 //UserNext();
                 btnNext.Visible = true;
@@ -201,7 +198,7 @@ namespace ludogame_v4.TheHien
 
         void ViTriNguoiChoi()
         {
-            GetStrImage();  
+            GetStrImage();
             switch (currentTurn)
             {
                 case Colors.Green:
@@ -227,7 +224,7 @@ namespace ludogame_v4.TheHien
 
         }
         private void DLBC_RollCLick(object sender, EventArgs e)
-        {         
+        {
             if (KiemTraRaQuan())
             {
                 btnDoXiNgau.Enabled = true;
@@ -246,12 +243,13 @@ namespace ludogame_v4.TheHien
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            UserNext();       
+            UserNext();
             picLuotQC.Image = new Bitmap(new Bitmap(GetStrImage()), (int)(picLuotQC.Width * 0.7), (int)(picLuotQC.Width * 0.7));
             TheHienXN.picXN1.Visible = false;
             lbComments.Text = "";
             btnDoXiNgau.Enabled = true;
             btnNext.Visible = false;
+            BC.CoHoi = 3;
             //label4.Visible = false;
             //label5.Visible = false;
 
@@ -278,6 +276,7 @@ namespace ludogame_v4.TheHien
             panelXN.Controls.Add(TheHienXN);
             ResetManHinh();
             BC.SapBanCo(panelBC, TuyChonThamSo.tc);
+            BC.CoHoi = 3;
             panelXN.BringToFront();
 
             Data.CreateBanSql();
