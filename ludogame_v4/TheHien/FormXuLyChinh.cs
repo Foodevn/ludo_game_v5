@@ -36,8 +36,6 @@ namespace ludogame_v4.TheHien
         private TheHienXiNgau TheHienXN = new TheHienXiNgau();
 
         private XiNgau XN = new XiNgau();
-
-        private Button btnThoat;
         private Colors currentTurn;
         private BanCo BC;
 
@@ -76,8 +74,8 @@ namespace ludogame_v4.TheHien
             //LoadHinhBC();
             XN.SoXN = TuyChonThamSo.tc.SoHotXiNgau;
             btnDoXiNgau.Enabled = false;
-            label4.Visible = false;
-            label5.Visible = false;
+            //label4.Visible = false;
+            //label5.Visible = false;
             TheHienXN.picXN1.Visible = false;
             SapBanCo();
             // CreateMenu();
@@ -137,8 +135,8 @@ namespace ludogame_v4.TheHien
 
         public void GetComments()
         {
-            label4.Visible = true;
-            label5.Visible = true;
+            //label4.Visible = true;
+            //label5.Visible = true;
             if (BC.KiemTraNguoiChoiDiDc())
                 lbComments.Text = "Di chuyển";
             else
@@ -238,8 +236,8 @@ namespace ludogame_v4.TheHien
             {
                 btnDoXiNgau.Enabled = true;
                 btnNext.Visible = true;
-                label4.Visible = true;
-                label5.Visible = true;
+                //label4.Visible = true;
+                //label5.Visible = true;
                 btnDoXiNgau.Enabled = false;
                 lbComments.Text = "Hết lượt";
             }
@@ -254,8 +252,8 @@ namespace ludogame_v4.TheHien
             lbComments.Text = "";
             btnDoXiNgau.Enabled = true;
             btnNext.Visible = false;
-            label4.Visible = false;
-            label5.Visible = false;
+            //label4.Visible = false;
+            //label5.Visible = false;
 
         }
 

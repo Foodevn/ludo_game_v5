@@ -38,6 +38,10 @@
             this.cmbQuan2 = new System.Windows.Forms.ComboBox();
             this.cmbQuan1 = new System.Windows.Forms.ComboBox();
             this.cmbSoNguoiChoi = new System.Windows.Forms.ComboBox();
+            this.picQuan4 = new System.Windows.Forms.PictureBox();
+            this.picQuan3 = new System.Windows.Forms.PictureBox();
+            this.picQuan2 = new System.Windows.Forms.PictureBox();
+            this.picQuan1 = new System.Windows.Forms.PictureBox();
             this.Quan4 = new System.Windows.Forms.RadioButton();
             this.Quan3 = new System.Windows.Forms.RadioButton();
             this.Quan2 = new System.Windows.Forms.RadioButton();
@@ -57,7 +61,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBoxChonxiNgau = new System.Windows.Forms.GroupBox();
             this.MotXN = new System.Windows.Forms.RadioButton();
             this.HaiXN = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -74,18 +78,14 @@
             this.openFileDlg = new System.Windows.Forms.OpenFileDialog();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbLui = new System.Windows.Forms.Label();
-            this.picQuan1 = new System.Windows.Forms.PictureBox();
-            this.picQuan2 = new System.Windows.Forms.PictureBox();
-            this.picQuan3 = new System.Windows.Forms.PictureBox();
-            this.picQuan4 = new System.Windows.Forms.PictureBox();
-            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picQuan4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picQuan3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picQuan2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picQuan1)).BeginInit();
+            this.groupBoxChonxiNgau.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picQuan1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picQuan2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picQuan3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picQuan4)).BeginInit();
             this.SuspendLayout();
             // 
             // cbMay4
@@ -180,6 +180,46 @@
             this.cmbSoNguoiChoi.Size = new System.Drawing.Size(70, 37);
             this.cmbSoNguoiChoi.TabIndex = 27;
             this.cmbSoNguoiChoi.SelectedIndexChanged += new System.EventHandler(this.cmbSoNguoiChoi_SelectedIndexChanged);
+            // 
+            // picQuan4
+            // 
+            this.picQuan4.Location = new System.Drawing.Point(328, 341);
+            this.picQuan4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.picQuan4.Name = "picQuan4";
+            this.picQuan4.Size = new System.Drawing.Size(30, 31);
+            this.picQuan4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picQuan4.TabIndex = 26;
+            this.picQuan4.TabStop = false;
+            // 
+            // picQuan3
+            // 
+            this.picQuan3.Location = new System.Drawing.Point(328, 265);
+            this.picQuan3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.picQuan3.Name = "picQuan3";
+            this.picQuan3.Size = new System.Drawing.Size(30, 31);
+            this.picQuan3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picQuan3.TabIndex = 25;
+            this.picQuan3.TabStop = false;
+            // 
+            // picQuan2
+            // 
+            this.picQuan2.Location = new System.Drawing.Point(328, 190);
+            this.picQuan2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.picQuan2.Name = "picQuan2";
+            this.picQuan2.Size = new System.Drawing.Size(30, 31);
+            this.picQuan2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picQuan2.TabIndex = 24;
+            this.picQuan2.TabStop = false;
+            // 
+            // picQuan1
+            // 
+            this.picQuan1.Location = new System.Drawing.Point(328, 120);
+            this.picQuan1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.picQuan1.Name = "picQuan1";
+            this.picQuan1.Size = new System.Drawing.Size(30, 31);
+            this.picQuan1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picQuan1.TabIndex = 23;
+            this.picQuan1.TabStop = false;
             // 
             // Quan4
             // 
@@ -383,20 +423,20 @@
             this.panel1.Size = new System.Drawing.Size(198, 86);
             this.panel1.TabIndex = 0;
             // 
-            // groupBox1
+            // groupBoxChonxiNgau
             // 
-            this.groupBox1.Controls.Add(this.panel1);
-            this.groupBox1.Controls.Add(this.MotXN);
-            this.groupBox1.Controls.Add(this.HaiXN);
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.Control;
-            this.groupBox1.Location = new System.Drawing.Point(309, 490);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Size = new System.Drawing.Size(403, 148);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Chọn Xí Ngầu";
+            this.groupBoxChonxiNgau.Controls.Add(this.panel1);
+            this.groupBoxChonxiNgau.Controls.Add(this.MotXN);
+            this.groupBoxChonxiNgau.Controls.Add(this.HaiXN);
+            this.groupBoxChonxiNgau.ForeColor = System.Drawing.SystemColors.Control;
+            this.groupBoxChonxiNgau.Location = new System.Drawing.Point(685, 505);
+            this.groupBoxChonxiNgau.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBoxChonxiNgau.Name = "groupBoxChonxiNgau";
+            this.groupBoxChonxiNgau.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBoxChonxiNgau.Size = new System.Drawing.Size(284, 124);
+            this.groupBoxChonxiNgau.TabIndex = 0;
+            this.groupBoxChonxiNgau.TabStop = false;
+            this.groupBoxChonxiNgau.Text = "Chọn Xí Ngầu";
             // 
             // MotXN
             // 
@@ -432,7 +472,7 @@
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox3.Size = new System.Drawing.Size(207, 122);
+            this.groupBox3.Size = new System.Drawing.Size(207, 129);
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Giá trị Ra Quân";
@@ -484,7 +524,7 @@
             this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox4.Size = new System.Drawing.Size(207, 122);
+            this.groupBox4.Size = new System.Drawing.Size(207, 136);
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Giá trị về Đích";
@@ -530,10 +570,10 @@
             this.btnApDung.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnApDung.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnApDung.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnApDung.Location = new System.Drawing.Point(775, 515);
+            this.btnApDung.Location = new System.Drawing.Point(428, 515);
             this.btnApDung.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnApDung.Name = "btnApDung";
-            this.btnApDung.Size = new System.Drawing.Size(186, 88);
+            this.btnApDung.Size = new System.Drawing.Size(233, 114);
             this.btnApDung.TabIndex = 1;
             this.btnApDung.Text = "Chơi";
             this.btnApDung.Click += new System.EventHandler(this.btnApDung_Click);
@@ -544,11 +584,11 @@
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.btnApDung);
+            this.panel2.Controls.Add(this.groupBoxChonxiNgau);
             this.panel2.Controls.Add(this.groupBox3);
             this.panel2.Controls.Add(this.Quan1);
             this.panel2.Controls.Add(this.groupBox4);
             this.panel2.Controls.Add(this.txtUser4);
-            this.panel2.Controls.Add(this.groupBox1);
             this.panel2.Controls.Add(this.Quan2);
             this.panel2.Controls.Add(this.cbMay4);
             this.panel2.Controls.Add(this.txtUser3);
@@ -600,52 +640,12 @@
             this.lbLui.Text = "<";
             this.lbLui.Click += new System.EventHandler(this.lbLui_Click);
             // 
-            // picQuan1
-            // 
-            this.picQuan1.Location = new System.Drawing.Point(328, 120);
-            this.picQuan1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.picQuan1.Name = "picQuan1";
-            this.picQuan1.Size = new System.Drawing.Size(30, 31);
-            this.picQuan1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picQuan1.TabIndex = 23;
-            this.picQuan1.TabStop = false;
-            // 
-            // picQuan2
-            // 
-            this.picQuan2.Location = new System.Drawing.Point(328, 190);
-            this.picQuan2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.picQuan2.Name = "picQuan2";
-            this.picQuan2.Size = new System.Drawing.Size(30, 31);
-            this.picQuan2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picQuan2.TabIndex = 24;
-            this.picQuan2.TabStop = false;
-            // 
-            // picQuan3
-            // 
-            this.picQuan3.Location = new System.Drawing.Point(328, 265);
-            this.picQuan3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.picQuan3.Name = "picQuan3";
-            this.picQuan3.Size = new System.Drawing.Size(30, 31);
-            this.picQuan3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picQuan3.TabIndex = 25;
-            this.picQuan3.TabStop = false;
-            // 
-            // picQuan4
-            // 
-            this.picQuan4.Location = new System.Drawing.Point(328, 341);
-            this.picQuan4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.picQuan4.Name = "picQuan4";
-            this.picQuan4.Size = new System.Drawing.Size(30, 31);
-            this.picQuan4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picQuan4.TabIndex = 26;
-            this.picQuan4.TabStop = false;
-            // 
             // TuyChon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1487, 885);
             this.Controls.Add(this.lbLui);
             this.Controls.Add(this.panel2);
@@ -656,15 +656,15 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tùy Chọn";
             this.Load += new System.EventHandler(this.TuyChon_Load);
-            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picQuan4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picQuan3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picQuan2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picQuan1)).EndInit();
+            this.groupBoxChonxiNgau.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picQuan1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picQuan2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picQuan3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picQuan4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -679,5 +679,5 @@
         private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.Label lbLui;
-    }
+	}
 }

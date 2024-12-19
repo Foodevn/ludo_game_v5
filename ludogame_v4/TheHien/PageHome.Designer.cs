@@ -43,13 +43,13 @@
             this.btnStart.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnStart.FlatAppearance.BorderSize = 0;
             this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStart.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnStart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStart.Location = new System.Drawing.Point(0, 0);
             this.btnStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(279, 88);
+            this.btnStart.Size = new System.Drawing.Size(394, 121);
             this.btnStart.TabIndex = 1;
             this.btnStart.Text = "Start Game";
             this.btnStart.UseVisualStyleBackColor = false;
@@ -63,10 +63,10 @@
             this.panelButton.Controls.Add(this.btnChampion);
             this.panelButton.Controls.Add(this.btnRules);
             this.panelButton.Controls.Add(this.btnStart);
-            this.panelButton.Location = new System.Drawing.Point(608, 129);
+            this.panelButton.Location = new System.Drawing.Point(562, 129);
             this.panelButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelButton.Name = "panelButton";
-            this.panelButton.Size = new System.Drawing.Size(279, 482);
+            this.panelButton.Size = new System.Drawing.Size(394, 539);
             this.panelButton.TabIndex = 1;
             // 
             // btnExit
@@ -76,13 +76,13 @@
             this.btnExit.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(0, 264);
+            this.btnExit.Location = new System.Drawing.Point(0, 363);
             this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(279, 88);
+            this.btnExit.Size = new System.Drawing.Size(394, 121);
             this.btnExit.TabIndex = 5;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -95,15 +95,15 @@
             this.btnChampion.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnChampion.FlatAppearance.BorderSize = 0;
             this.btnChampion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChampion.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChampion.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChampion.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnChampion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChampion.Location = new System.Drawing.Point(0, 176);
+            this.btnChampion.Location = new System.Drawing.Point(0, 242);
             this.btnChampion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnChampion.Name = "btnChampion";
-            this.btnChampion.Size = new System.Drawing.Size(279, 88);
+            this.btnChampion.Size = new System.Drawing.Size(394, 121);
             this.btnChampion.TabIndex = 3;
-            this.btnChampion.Text = "Champion";
+            this.btnChampion.Text = "Ranking";
             this.btnChampion.UseVisualStyleBackColor = false;
             this.btnChampion.Click += new System.EventHandler(this.btnChampion_Click);
             // 
@@ -114,13 +114,13 @@
             this.btnRules.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnRules.FlatAppearance.BorderSize = 0;
             this.btnRules.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRules.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRules.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRules.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnRules.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRules.Location = new System.Drawing.Point(0, 88);
+            this.btnRules.Location = new System.Drawing.Point(0, 121);
             this.btnRules.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRules.Name = "btnRules";
-            this.btnRules.Size = new System.Drawing.Size(279, 88);
+            this.btnRules.Size = new System.Drawing.Size(394, 121);
             this.btnRules.TabIndex = 2;
             this.btnRules.Text = "Rules";
             this.btnRules.UseVisualStyleBackColor = false;
@@ -131,7 +131,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1508, 944);
             this.Controls.Add(this.panelButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

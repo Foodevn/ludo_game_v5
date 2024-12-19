@@ -70,5 +70,11 @@ namespace ludogame_v4.TheHien
 		{
             ShowData();
 		}
+
+		private void lbLui_Click(object sender, EventArgs e)
+		{
+			TheHien.Menu.Lui = 1;
+			this.Close();
+		}
 	}
 }

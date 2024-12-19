@@ -117,6 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>a) Bắt đầu trò chơi
+        • Người chơi lần lượt tung xúc xắc.
+        • Để đưa một quân cờ từ chuồng ra ngoài vạch xuất phát, người chơi cần tung được 1 hoặc 6 điểm.
++Khi tung được 1 hoặc 6, người chơi có thể:
+        • Đưa một quân mới ra khỏi chuồng.
+        • Hoặc di chuyển một quân đang ở trên bàn cờ thêm 1 hoặc 6 bước.
+b) Di chuyển quân cờ
+        • Sau khi tung xúc xắc, di chuyển quân cờ trên bàn cờ theo số điểm đã tung được.
+        • Nếu tung được 1 hoặc 6, người chơi được thưởng thêm một lượt tung xúc xắc.
+c) Ăn quân đối thủ
+        • Nếu quân cờ của bạn rơi vào ô có quân cờ của đối thủ, quân cờ đối thủ sẽ bị "ăn" và phải trở về chuồng. Đối thủ cần tung được 6 để đưa quân đó ra ngoài lại.
+        • Nếu ô đó đã có quân của bạn, bạn không được ăn chính quân của mình (gọi là "trùng nhà").
+d) Về đích
+        • Sau khi hoàn thành vòng đi, quân cờ cần đi vào chuồng của mình. Lúc này:
+            -Người chơi phải tung đúng số điểm 1 hoặc 6 để về chuồng.
+            -Nếu không tung đúng số điểm, quân cờ phải đứng chờ.
+e) Chặn đường
+        • Khi có quân cờ của một người đứng ở một ô, tạo thành "hàng rào" chặn đường, các quân cờ của đối thủ không được vượt qua hàng rào này khi tung điểm quá với ô này.
+</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

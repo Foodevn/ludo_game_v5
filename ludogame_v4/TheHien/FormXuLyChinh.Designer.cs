@@ -37,7 +37,6 @@
             this.panelXN = new System.Windows.Forms.Panel();
             this.btnDoXiNgau = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnThoat = new System.Windows.Forms.Button();
             this.lbTextNameUser = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lbComments = new System.Windows.Forms.Label();
@@ -46,6 +45,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.lbLui = new System.Windows.Forms.Label();
             this.panelBC.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLuotQC)).BeginInit();
@@ -159,17 +159,6 @@
             this.label1.Text = "Lượt đi:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnThoat
-            // 
-            this.btnThoat.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnThoat.Location = new System.Drawing.Point(34, 32);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(102, 34);
-            this.btnThoat.TabIndex = 10;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
-            // 
             // lbTextNameUser
             // 
             this.lbTextNameUser.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -205,6 +194,7 @@
             this.lbComments.Name = "lbComments";
             this.lbComments.Size = new System.Drawing.Size(313, 46);
             this.lbComments.TabIndex = 6;
+            this.lbComments.Text = "Thực hiện nước đi";
             this.lbComments.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnNext
@@ -267,19 +257,34 @@
             this.label4.Size = new System.Drawing.Size(309, 10);
             this.label4.TabIndex = 12;
             // 
+            // lbLui
+            // 
+            this.lbLui.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbLui.AutoSize = true;
+            this.lbLui.BackColor = System.Drawing.Color.Transparent;
+            this.lbLui.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbLui.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLui.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbLui.Location = new System.Drawing.Point(93, 19);
+            this.lbLui.Name = "lbLui";
+            this.lbLui.Size = new System.Drawing.Size(97, 102);
+            this.lbLui.TabIndex = 65;
+            this.lbLui.Text = "<";
+            this.lbLui.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
             // FormXuLyChinh
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1508, 944);
+            this.Controls.Add(this.lbLui);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lbComments);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panelXN);
-            this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.lbTextNameUser);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnNext);
@@ -314,5 +319,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbLui;
     }
 }

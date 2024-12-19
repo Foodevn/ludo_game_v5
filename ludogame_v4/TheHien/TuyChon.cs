@@ -15,7 +15,7 @@ namespace ludogame_v4.TheHien
     public partial class TuyChon : Form
     {
 
-        private GroupBox groupBox1;
+        private GroupBox groupBoxChonxiNgau;
 
         private Button btnApDung;
 
@@ -123,9 +123,12 @@ namespace ludogame_v4.TheHien
         }
 
 
+
         private void TuyChon_Load(object sender, EventArgs e)
         {
-            RemoveItemsControls();
+			groupBoxChonxiNgau.Visible = false;
+
+			RemoveItemsControls();
             theHienXN.LoadImageXiNgau1(Application.StartupPath + "/HinhXiNgau/1.jpg");
             theHienXN.LoadImageXiNgau2(Application.StartupPath + "/HinhXiNgau/6.jpg");
             this.panel1.Controls.Add(theHienXN);
