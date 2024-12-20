@@ -137,3 +137,7 @@ C:\Users\Lenovo\Downloads\ludo_game_v5\ludogame_v4\obj\Debug\ludogame_v4.login.P
 C:\Users\Lenovo\Downloads\ludo_game_v5\ludogame_v4\obj\Debug\ludogame_v4.TheHien.Menu.resources
 C:\Users\Lenovo\Downloads\ludo_game_v5\ludogame_v4\obj\Debug\ludogame_v4.TheHien.Rules.resources
 C:\Users\Lenovo\Downloads\ludo_game_v5\ludogame_v4\obj\Debug\ludogame_v4.TheHien.TheHienQuanCo.resources
+C:\Users\Lenovo\Downloads\Thư mục mới\ludo_game_v5\ludogame_v4\obj\Debug\ludogame_v4.login.PageHome.resources
+C:\Users\Lenovo\Downloads\Thư mục mới\ludo_game_v5\ludogame_v4\obj\Debug\ludogame_v4.TheHien.Menu.resources
+C:\Users\Lenovo\Downloads\Thư mục mới\ludo_game_v5\ludogame_v4\obj\Debug\ludogame_v4.TheHien.Rules.resources
+C:\Users\Lenovo\Downloads\Thư mục mới\ludo_game_v5\ludogame_v4\obj\Debug\ludogame_v4.TheHien.TheHienQuanCo.resources

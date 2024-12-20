@@ -186,30 +186,31 @@ namespace ludogame_v4.TheHien
 
             btnDoXiNgau.Enabled = false;
 
-            if (BC.KiemTraCoHoi() == 1 && BC.CoHoi != 0)
+            if (!BC.KiemTraNguoiChoiDiDc() && BC.KiemTraCoHoi() == 1 && BC.CoHoi != 0) //Quân còn trong chuồng
             {
                 BC.CoHoi--;
                 btnDoXiNgau.Enabled = true;
                 lbComments.Text = "Ném lại còn: " + BC.CoHoi;
             }
 
-            if (BC.KiemTraNguoiChoiDiDc())
+            if (BC.KiemTraNguoiChoiDiDc()) //Nếu đi dc
             {
                 BC.CoHoi = 0;
                 btnDoXiNgau.Enabled = false;
                 lbComments.Text = "Di chuyển";
             }
-            if (!BC.KiemTraNguoiChoiDiDc())
+            if (!BC.KiemTraNguoiChoiDiDc() && BC.KiemTraCoHoi() == 0)
             {
-                btnNext.Visible = true;
-                lbComments.Text = "Hết lượt";
+                BC.CoHoi = 0;
             }
             BC.DLBC.RollCLick += DLBC_RollCLick;
+
             if (BC.KiemTraNguoiChoiDiDc() == false && BC.CoHoi == 0) // Có đi dc không, nếu không thì chuyển User tiếp thep
             {
                 //UserNext();
                 btnNext.Visible = true;
                 btnDoXiNgau.Enabled = false;
+                lbComments.Text = "Hết lượt";
             }
         }
 
