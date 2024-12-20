@@ -46,11 +46,15 @@ namespace ludogame_v4.TheHien
         LuuDuLieuSql Data = new LuuDuLieuSql();
 
         PictureBox icoLocal = new PictureBox();
+
+        private Image backgroundImage;
         public FormXuLyChinh(TuyChon tuyChonThamSo)
         {
             TuyChonThamSo = tuyChonThamSo;
 
             InitializeComponent();
+            backgroundImage = new Bitmap(Application.StartupPath + "\\image\\14f9f7087b83339250e511a0f3c9a7b0.jpg");
+            this.DoubleBuffered = true; // Kích hoạt DoubleBuffering để giảm nhấp nháy
             //TheHienXN.UserControlClicked += MyControl_UserControlClicked;
             //panelXN.Controls.Add(TheHienXN);
             TheHienXN.Size = new Size((int)(TheHienXN.Width * 2), (int)(TheHienXN.Height * 2));
@@ -61,6 +65,15 @@ namespace ludogame_v4.TheHien
             icoLocal.Location = new Point(10, 10);
             icoLocal.SizeMode = PictureBoxSizeMode.StretchImage;
             icoLocal.Image = new Bitmap(Application.StartupPath + "\\image\\iconLocal.png");
+        }
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+            if (backgroundImage != null)
+            {
+                e.Graphics.DrawImage(backgroundImage, this.ClientRectangle);
+            }
         }
 
         private void MyControl_UserControlClicked(object sender, EventArgs e)
@@ -185,6 +198,11 @@ namespace ludogame_v4.TheHien
                 BC.CoHoi = 0;
                 btnDoXiNgau.Enabled = false;
                 lbComments.Text = "Di chuyển";
+            }
+            if (!BC.KiemTraNguoiChoiDiDc())
+            {
+                btnNext.Visible = true;
+                lbComments.Text = "Hết lượt";
             }
             BC.DLBC.RollCLick += DLBC_RollCLick;
             if (BC.KiemTraNguoiChoiDiDc() == false && BC.CoHoi == 0) // Có đi dc không, nếu không thì chuyển User tiếp thep
@@ -333,7 +351,6 @@ namespace ludogame_v4.TheHien
                 }
             }
         }
-
     }
 }
 
