@@ -150,8 +150,9 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(1147, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(189, 58);
@@ -163,8 +164,9 @@
             // 
             this.lbTextNameUser.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbTextNameUser.AutoSize = true;
+            this.lbTextNameUser.BackColor = System.Drawing.Color.Transparent;
             this.lbTextNameUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTextNameUser.ForeColor = System.Drawing.Color.Black;
+            this.lbTextNameUser.ForeColor = System.Drawing.Color.White;
             this.lbTextNameUser.Location = new System.Drawing.Point(1292, 122);
             this.lbTextNameUser.Name = "lbTextNameUser";
             this.lbTextNameUser.Size = new System.Drawing.Size(131, 58);
@@ -176,8 +178,9 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(1147, 341);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(211, 58);
@@ -188,8 +191,9 @@
             // lbComments
             // 
             this.lbComments.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbComments.BackColor = System.Drawing.Color.Transparent;
             this.lbComments.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbComments.ForeColor = System.Drawing.Color.Black;
+            this.lbComments.ForeColor = System.Drawing.Color.White;
             this.lbComments.Location = new System.Drawing.Point(1149, 620);
             this.lbComments.Name = "lbComments";
             this.lbComments.Size = new System.Drawing.Size(313, 46);
@@ -230,7 +234,8 @@
             // label5
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label5.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label5.Location = new System.Drawing.Point(1153, 707);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(309, 10);
@@ -251,7 +256,8 @@
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label4.Location = new System.Drawing.Point(1153, 570);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(309, 10);
@@ -291,6 +297,7 @@
             this.Controls.Add(this.btnDoXiNgau);
             this.Controls.Add(this.panelBC);
             this.Controls.Add(this.picLuotQC);
+            this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormXuLyChinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
